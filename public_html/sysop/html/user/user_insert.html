@@ -1,0 +1,214 @@
+<form name="form1" method="post" target="sysfrm">
+<input type="hidden" name="mode" value="">
+<table class="c_tb01">
+    <tr>
+        <td class="c_th01"><!--@nif(modify)-->등록<!--/nif(modify)--><!--@if(modify)-->수정<!--/if(modify)--></td>
+    </tr>
+</table>
+
+<table class="f_tb01">
+<colgroup>
+    <col style="width:120px;">
+    <col style="width:auto;">
+    <col style="width:120px;">
+    <col style="width:auto;">
+</colgroup>
+<tr>
+    <td class="f_th01">아이디</td>
+    <td class="f_td01" colspan="3">
+        <!--@nif(modify)-->
+        <input type="text" name="login_id" size="20" onblur="verifyLoginId('{{login_id}}')" >
+        <span id="verify_login_id_area" style="padding-left:10px">영문으로 시작하는 2-20자 영문, 숫자 조합을 입력하세요.</span>
+        <script>
+            function verifyLoginId(loginId) {
+                var f = document.forms['form1'];
+                var area = document.getElementById('verify_login_id_area');
+                var value = f["login_id"].value;
+                if(value == "") {
+                    area.innerHTML = "사용하실 아이디를 입력해주세요."; return;
+                }
+                var pattern = /^[a-zA-Z]{1}[a-zA-Z0-9]{1,19}$/; //영문 시작, 2~20자 영문 숫자 조합
+                if(!pattern.test(value)) {
+                    area.innerHTML = "<span class=\"bad\">영문으로 시작하는 2-20자 영문, 숫자 조합을 입력하세요.</span>";
+                    return;
+                }
+
+                call("user_insert.jsp?mode=VERIFY&v=" + escape(value), "verify_login_id_area");
+
+            }
+        </script>
+        <!--/nif(modify)-->
+        <!--@if(modify)-->
+        {{login_id}} &nbsp;
+        <button type="button" class="good" onclick="OpenLayer('user_loginid_modify.jsp?uid={{id}}', '', 600, 220)">수정</button>
+        <span id="change_id_area"></span>
+        <!--/if(modify)-->
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">이름</td>
+    <td class="f_td01">
+        <input type="text" name="user_nm" size="20" pattern="[가-힣]+">
+    </td>
+    <td class="f_th01">회원구분</td>
+    <td class="f_td01">
+        <select name="user_type">
+            <!--@nif(ADMIN_BLOCK)-->
+            <option value="U">회원</option>
+            <!--/nif(ADMIN_BLOCK)-->
+            <option value="A">운영자</option>
+            <!--@if(SUPERADMIN_BLOCK)-->
+            <option value="S">최고관리자</option>
+            <!--/if(SUPERADMIN_BLOCK)-->
+        </select>
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">비밀번호</td>
+    <td class="f_td01" colspan="3">
+        <!--@nif(modify)-->
+        <input type="password" name="passwd" size="20" onblur="verifyPasswd()">
+        <span id="verify_passwd_area" class="desc01">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>
+        <script>
+            function verifyPasswd() {
+                var f = document.forms['form1'];
+                var area = document.getElementById("verify_passwd_area");
+                var passwd = f["passwd"].value;
+                var passwd2 = f["passwd2"].value;
+                var pattern = /^(?=.*?[A-Za-z])(?=.*?[0-9])(?=.*?[\W_]).{8,}$/;
+                if(!pattern.test(passwd)) {
+                    area.innerHTML = "<span class=\"bad\">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>";
+                    return;
+                }
+                if(passwd && !passwd2) {
+                    area.innerHTML = "비밀번호 확인란에 한 번 더 입력하세요.";
+                    return;
+                }
+
+                if(passwd != passwd2) {
+                    area.innerHTML = "<span class=\"bad\">두 비밀번호가 일치하지 않습니다.</span>";
+                    return;
+                }
+                area.innerHTML = "<span class=\"good\">두 비밀번호가 일치합니다.</span>";
+            }
+        </script>
+        <!--/nif(modify)-->
+        <!--@if(modify)-->
+        <button type="button" class="bad" onclick="resetPassword();">비밀번호 초기화</button>
+        <span id="reset_passwd_area"></span>
+        <script>
+            //비밀번호 초기화
+            function resetPassword() {
+                var f = document.forms["form1"];
+                f["mode"].value = "RESETPW";
+                f.submit();
+                f["mode"].value = "";
+            }
+
+        </script>
+        <!--/if(modify)-->
+
+    </td>
+</tr>
+<!--@nif(modify)-->
+<tr>
+    <td class="f_th01">비밀번호확인</td>
+    <td class="f_td01" colspan="3">
+        <input type="password" name="passwd2" size="20" onblur="verifyPasswd()">
+    </td>
+</tr>
+<!--/nif(modify)-->
+<tr>
+    <td class="f_th01">휴대전화번호</td>
+    <td class="f_td01" colspan="3">
+        <input type="text" name="mobile1" maxlength="3" size="10" onblur="verifyMobile()"> - <input type="text" name="mobile2" maxlength="4" size="10" onblur="verifyMobile()"> - <input type="text" name="mobile3" maxlength="4" size="10" onblur="verifyMobile()">
+        <span id="verify_mobile_area" style="padding-left:10px"></span>
+        <script>
+            function verifyMobile() {
+                var f = document.forms['form1'];
+                var area = document.getElementById("verify_mobile_area");
+                var mobile1 = f["mobile1"].value;
+                var mobile2 = f["mobile2"].value;
+                var mobile3 = f["mobile3"].value;
+                var pattern = /^\d{3,}$/;
+                if(!pattern.test(mobile1)||!pattern.test(mobile2)||!pattern.test(mobile3)) {
+                    area.innerHTML = "<span class=\"bad\">휴대전화번호가 형식에 맞지 않습니다.</span>";
+                    return;
+                }
+                area.innerHTML = "<span class=\"good\"></span>";
+            }
+
+        </script>
+        <!--@if(sms_date)-->
+        <span class="desc02" id="mobile_date_area">수신처리일 : {{sms_date}}</span>
+        <!--/if(sms_date)-->
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">이메일</td>
+    <td class="f_td01" colspan="3">
+        <input type="text" name="email1" size="20" onblur="verifyEmail()" > @ <input type="text" name="email2" size="20" onblur="verifyEmail()">
+        <select onchange="document.forms['form1']['email2'].value=this.value;document.forms['form1']['email2'].focus();">
+            <option value=""> - 직접 입력 - </option>
+            <option value="naver.com">naver.com</option>
+            <option value="nate.com">nate.com</option>
+            <option value="gmail.com">gmail.com</option>
+            <option value="daum.net">daum.net</option>
+        </select>
+        <span id = "verify_email_area"></span>
+        <script>
+            function verifyEmail() {
+                var f = document.forms['form1'];
+                var area = document.getElementById("verify_email_area");
+                var email1 = f["email1"].value;
+                var email2 = f["email2"].value;
+                var pattern = /^[A-Za-z0-9]*$/;
+                var pattern2 = /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+                if(!pattern.test(email1) || !pattern2.test(email2)) {
+                    area.innerHTML = "<span class=\"bad\">이메일 형식이 잘못되었습니다.</span>";
+                    return;
+                }
+                area.innerHTML = "<span class=\"good\"></span>";
+            }
+        </script>
+        <!--@if(email_date)-->
+        <span class="desc02" id="email_date_area">수신처리일 : {{email_date}}</span>
+        <!--/if(email_date)-->
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">상태</td>
+    <td class="f_td01" colspan="3">
+        <!--@loop(status_list)-->
+        <label><input type="radio" name="status" class="ipt01" value="{{status_list.id}}">{{status_list.name}}</label>
+        <!--/loop(status_list)-->
+        <span class="desc01"> 중지 상태로 변경시 해당 회원은 로그인을 할 수 없습니다.</span>
+    </td>
+</tr>
+</table>
+
+<table class="b_tb01">
+    <tr>
+        <!--@nif(ADMIN_BLOCK)-->
+        <td class="b_th01"><button type="button" class="bttn2" onclick="location.href='user_list.jsp';">목록</button></td>
+        <!--/nif(ADMIN_BLOCK)-->
+        <!--@if(ADMIN_BLOCK)-->
+        <td class="b_th01"><button type="button" class="bttn2" onclick="location.href='admin_list.jsp';">목록</button></td>
+        <!--/if(ADMIN_BLOCK)-->
+        <td class="b_td01">
+            <!--@nif(modify)-->
+            <button type="submit" class="bttn2">등록</button>
+            <!--/nif(modify)-->
+            <!--@if(modify)-->
+                <button type="submit" class="bttn2">수정</button>
+                <!--@if(USER_BLOCK)-->
+                <button type="button" class="bttn2" onclick="btnConfirmGo('삭제', 'user_delete.jsp?id={{id}}');">삭제</button>
+                <!--/if(USER_BLOCK)-->
+            <!--/if(modify)-->
+        </td>
+    </tr>
+</table>
+</form>
+{{form_script}}
+
+

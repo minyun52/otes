@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{SYS_TITLE}}</title>
+<link rel="stylesheet" type="text/css" href="/common/css/admin.css">
+<link rel="stylesheet" type="text/css" href="/sysop/html/css/admin.css">
+<link rel="stylesheet" type="text/css" href="/common/css/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/common/js/jquery-ui-1.12.1-base_malgncustom.css">
+<script language="javascript" type="text/javascript" src="/common/js/jquery-1.12.3.min.js" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" src="/common/js/jquery-ui-1.12.1_malgncustom.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/admin_func.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/validate.js"></script>
+<script language="javascript" type="text/javascript" src="/common/js/common.js"></script>
+<style>
+.a_tb01 { width: 100%; }
+.t_tb01 { width: 100%; }
+</style>
+
+<body marginheight="0" marginwidth="0">
+<div id="alert_area"></div>
+<table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+        <td>
+
+            <table id="p_title_pop" cellpadding="0" cellspacing="0" width="100%" border="0" style="table-layout:fixed;background:url(../html/images/admin/common/line_bg.gif) repeat-x bottom;">
+                <tr height="42">
+                    <td style="padding-left:5px;">
+                        <b style="font-family:Dotum, 돋움, Arial;font-size:17px;">
+                            <div id="_ttl_"><div class="blt"><!----></div><div>{{p_title}}</div></div>
+                        </b>
+                    </td>
+                </tr>
+            </table>
+
+            <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td style="padding:15px">
+                        <!--@include(BODY)-->
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
+<script>
+//확인창
+function btnConfirmGo(msg, url) {
+    if(confirm(msg + "하시겠습니까?")) {
+        location.href = url;
+    }
+}
+</script>

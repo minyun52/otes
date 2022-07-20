@@ -1,0 +1,122 @@
+<form name="form1" method="get">
+    <input type="hidden" name="tab" value="{{tab}}">
+    <input type="hidden" name="ord" value="">
+    <input type="hidden" name="mode" value="">
+
+    <table class="t_tb01">
+        <colgroup>
+            <col style="width:120px;">
+            <col style="width:auto;">
+            <col style="width:120px;">
+            <col style="width:auto;">
+        </colgroup>
+        <tr>
+            <td class="t_th01">추천여부</td>
+            <td class="t_td01">
+                <label><input type="radio" name="s_recomm" value="" class="ipt01" checked> 전체 </label>  &nbsp;
+                <label><input type="radio" name="s_recomm" value="Y" class="ipt01"> 추천 </label>  &nbsp;
+                <label><input type="radio" name="s_recomm" value="N" class="ipt01"> 비추천 </label>
+            </td>
+            <td class="t_th01">검색</td>
+            <td class="t_td01" colspan="2">
+                <select name="s_field" onchange="document.forms['form1']['s_keyword'].focus();">
+                    <option value=""> - 전체 - </option>
+                    <option value="a.course_nm">과정명</option>
+                    <option value="a.id">과정ID</option>
+                </select>
+                <input type="text" name="s_keyword" size="50" onfocus="this.select();">
+                <button type="submit" class="bttn2">검색</button>
+            </td>
+        </tr>
+    </table>
+
+    <table class="a_tb01">
+        <tr>
+            <td class="a_th01">
+                {{list_total}}
+                <select name="s_listnum" onchange="document.forms['form1'].submit();">
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                    <option value="100">100</option>
+                </select> 건씩 보기
+            </td>
+            <td class="a_td01">
+                <button type="button" class="bttn2 sky" onclick="location.href='course_insert.jsp?{{list_query}}';">과정등록</button>
+                <button type="button" class="bttn2" onclick="document.forms['form1']['mode'].value='excel';document.forms['form1'].submit();document.forms['form1']['mode'].value='';">EXCEL</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+{{form_script}}
+
+<form name="form2" method="post">
+    <table class="l_tb01">
+        <colgroup>
+            <col style="width:50px">
+            <col style="width:auto">
+            <col style="width:80px">
+            <col style="width:80px">
+            <col style="width:80px">
+            <col style="width:80px">
+        </colgroup>
+        <thead>
+        <tr>
+            <td class="l_th01">No</td>
+            <td class="l_th01"><span class="l_sort01" id="CL_a.course_nm" onclick="ListSort(this, '{{ord}}')">과정명</span></td>
+            <td class="l_th01">수료기준</td>
+            <td class="l_th01"><span class="l_sort01" id="CL_user_cnt" onclick="ListSort(this, '{{ord}}')">수강생</span> </td>
+            <td class="l_th01">추천여부</td>
+            <td class="l_th01">관리</td>
+
+        </tr>
+        </thead>
+        <tbody>
+        <!--@loop(list)-->
+        <tr class="ltd">
+            <td class="l_td01">{{list.__ord}}</td>
+            <td class="l_td01" title="{{list.course_nm}}">
+                <div style="float:left;margin-top:4px;margin-left:10px;"><a href="course_modify.jsp?id={{list.id}}&{{list_query}}">{{list.course_nm}}</a></div>
+            </td>
+            <td class="l_td01">{{list.limit_progress}}</td>
+            <td class="l_td01">{{list.user_cnt}}</td>
+            <td class="l_td01"><label class="switch01"><input type="checkbox" name="recomm_yn_{{list.id}}" id="recomm_yn_{{list.id}}" class="toggle_recomm_yn" value="Y" data-id="{{list.id}}" <!--@if(list.recomm_yn)-->checked="checked"<!--/if(list.recomm_yn)-->></label></td></label></td>
+            <td class="l_td01">
+                <div>
+                    <input type="button" class="btn_simp" value="강의목차" onclick="location.href='course_lesson.jsp?cid={{list.id}}';">
+                </div>
+            </td>
+        </tr>
+        <!--/loop(list)-->
+        </tbody>
+    </table>
+
+    <!--@nif(list)-->
+    <table class="n_tb01">
+        <tr>
+            <td class="n_td01">해당 자료가 없습니다.</td>
+        </tr>
+    </table>
+    <!--/nif(list)-->
+
+    <table class="p_tb01">
+        <tr>
+            <td class="p_td01">{{pagebar}}</td>
+        </tr>
+    </table>
+
+    <script>ListSort(null, "{{ord}}");</script>
+</form>
+{{form_script}}
+
+<script>
+    $(".toggle_recomm_yn").on("click", function() {
+        if(!confirm("추천여부를 변경하시겠습니까?")) return false;
+        $.post("../course/call_status_modify.jsp", {"id": $(this).attr("data-id"),  "recomm_yn": ($(this).prop("checked") ? "Y" : "N")}, function(data){
+            if(data.rst_code == "1") alert(data.rst_message);
+            else if(data.rst_code == "2") { $("#recomm_yn_" + data.id).prop("checked", data.recomm_yn == "N"); alert(data.rst_message);}
+            else alert(data.rst_message);
+        });
+    });
+</script>
+

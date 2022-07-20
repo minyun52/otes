@@ -1,0 +1,167 @@
+<div id="contet_area" style="width: 1200px">
+    <h3 class="hide">컨텐츠 내용</h3>
+    <div class="path">
+        <ol class="path_list">
+            <li>수강신청</li>
+            <li>과정정보</li>
+        </ol>
+    </div>
+
+    <h4 class="content_title">
+        <div class="content_title_course">
+            {{course_nm}}
+        </div>
+    </h4>
+
+    <div class="content_body">
+        <div class="course_information">
+            <div class="course_info">
+                <div class="info_img" id="info_img1">
+                    <img id="course_file_url1" src="{{course_file_url}}" alt="과정 이미지" />
+                </div>
+                <div class="info_text" id="info_text1">
+
+                    <form name="form1" method="post" target="sysfrm" action="/mypage/courseuser_insert.jsp">
+                        <input type="hidden" name="courseId" value="{{id}}" />
+                        <input type="hidden" name="course_insert_info" id="course_insert_info" value="{{end_date}}" />
+
+                        <div class="tb_box type_table type_inner">
+                            <table summary="{{course_nm}}과정의 신청기간및 교육시간을 나타냅니다.">
+                                <caption>{{course_nm}} 과정정보</caption>
+                                <colgroup>
+                                    <col style="width:80px" />
+                                    <col style="width:*" />
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th>수강기간</th>
+                                    <td>30일</td>
+                                </tr>
+                                <tr>
+                                    <th>강의구성</th>
+                                    <td>{{lesson_cnt}}차시</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <ul class="info_btn" id="info_btn">
+                            <li>
+                                <a id="info_btn_black" onclick="goSubmit()" class="button large black btn_buy">수강신청하기</a>
+                            </li>
+                            <script>
+                                function goSubmit() {
+                                    var confirmYn = false;
+                                    var loginYn = '{{SYS_LOGINID}}';
+                                    var applyStatus = '{{apply_status}}'; //첫수강
+                                    var applyAgainStatus = '{{apply_again_status}}'; //재수강
+                                    var applyFutureStatus = '{{apply_future_status}}'; //미래 수강 여부
+                                    var cuStatus = '{{cu_status}}'; //수강신청 이력
+                                    
+                                    //로그인 여부
+                                    if(loginYn === "") {
+                                        alert('로그인이 필요한 서비스입니다.\n확인을 누르시면 로그인 페이지로 이동합니다.');
+                                        window.location.href = 'https://otes.malgn.co.kr/member/login.jsp';
+                                        return;
+                                    }
+
+                                    if(cuStatus == 0 ) {//첫 수강신청
+                                        confirmYn = confirm('수강신청 하시겠습니까?');
+                                        if(confirmYn == false) return; 
+                                    }
+
+                                    //재수강 여부
+                                    if(applyStatus < 0 ) { //현재 수강신청 내역 존재 중
+                                        if(applyFutureStatus < 0 ) {
+                                            alert('선택하신 과정은 수강신청 할 수 없습니다. 수강예정인 과정입니다.');
+                                        } else{
+                                            alert('선택하신 과정은 수강신청 할 수 없습니다. 현재 수강중인 과정입니다.');
+                                        }
+                                        return false;
+                                    }
+
+                                    if(applyAgainStatus > 0 ) {//재수강
+                                        confirmYn = confirm('재수강하시겠습니까?');
+                                    }
+
+                                    if(!confirmYn) return false;
+
+                                    document.forms['form1'].submit();
+                                }
+                            </script>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="course_foot "> <!--tab_wrap--->
+
+            <ul id="cview1" style="margin-top: 20px" class="tab_cview tab_tt2"> <!--tab_tt-->
+                <li class="tab_title on" style="width: 50%"><a href="#cview1">과정소개</a></li>
+                <li class="tab_title " style="width: 50%"><a href="#cview2">강의목차</a></li>
+            </ul>
+
+            <div class="tab_con_wrap">
+                <div class="cv tab_con">
+                    <h6 class="page_title">과정소개</h6>
+                    <div class="cv_text">{{description}}</div>
+                </div>
+
+                <ul id="cview2"  style="margin-top: 20px" class="tab_cview tab_tt2 mt20">
+                    <li class="tab_title" style="width: 50%"><a href="#cview1">과정소개</a></li>
+                    <li class="tab_title on" style="width: 50%"><a href="#cview2">강의목차</a></li>
+                </ul>
+                <div class="cv tab_con">
+                    <h6 class="page_title">강의목차</h6>
+                    <div class="tb_box type_table">
+                        <table summary="과목 목차별 강의명을 나타냅니다.">
+                            <caption>강의목차</caption>
+                            <colgroup>
+                                <col style="width:100px;" />
+                                <col style="width:*;" />
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">차시</th>
+                                <th scope="col">강의명</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--@loop(lessonList)-->
+                            <tr>
+                                <th class="tac">{{lessonList.sort}}차시</th>
+                                <td align="left">{{lessonList.lesson_nm}}</td>
+                            </tr>
+                            <!--/loop(lessonList)-->
+                            <!--@nif(lessonList)-->
+                            <tr>
+                                <td colspan="2" class="nodata">강의 목차가 없습니다.</td>
+                            </tr>
+                            <!--/nif(lessonList)-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script language="JavaScript">
+    var f = document.forms['form1'];
+
+    function setLabel() {
+        var progresses = { "온라인" : "sky", "추천" : "red", "혼합" : "green", "패키지" : "brown" };
+        $(".label").each(function() {
+            var v = $(this).html();
+            $(this).addClass(progresses[v]);
+        });
+    }
+
+    $(document).ready(function(){
+        setLabel();
+    });
+</script>

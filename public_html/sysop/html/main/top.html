@@ -1,0 +1,18 @@
+<style>
+#utility button {cursor:pointer;}
+</style>
+<div id="top_contents">
+    <div id="logo">
+        <a class="txt_logo" href="../user/user_list.jsp" target="_Main">교육통합관리시스템</a>
+    </div>
+    <div id="utility">
+        <div id="buttons">
+            <button type="button" class="top_button blue" onclick="if(confirm('로그아웃하시겠습니까?')) top.location.href='../main/logout.jsp';"> 로그아웃</button>
+            <button type="button" class="top_button white" onclick="window.open('/main/index.jsp');">사이트 <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+        </div>
+        <div id="user">
+            <span style="color: white; font-weight:bold; font-size:15px;">{{user_name}}</span>
+            님, 환영합니다.
+        </div>
+    </div>
+</div>

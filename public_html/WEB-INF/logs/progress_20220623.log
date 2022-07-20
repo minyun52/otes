@@ -1,0 +1,312 @@
+[2022-06-23 09:54:50] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=67&max_time=67&cuid=98&lid=41&_=1655945643948
+userId=1, cuid=98, lid=41, studyTime=30, lastTime=67, ret=1
+[2022-06-23 09:55:33] 125.129.123.211 : /classroom/progress.jsp?study_time=19&last_time=147&max_time=147&cuid=98&lid=41&_=1655945643949
+userId=1, cuid=98, lid=41, studyTime=19, lastTime=147, ret=1
+[2022-06-23 09:55:43] 125.129.123.211 : /classroom/progress.jsp?study_time=6&last_time=153&max_time=153&cuid=98&lid=41&_=1655945735965
+userId=1, cuid=98, lid=41, studyTime=6, lastTime=153, ret=1
+[2022-06-23 09:56:19] 125.129.123.211 : /classroom/progress.jsp?study_time=17&last_time=170&max_time=170&cuid=98&lid=41&_=1655945760844
+userId=1, cuid=98, lid=41, studyTime=17, lastTime=170, ret=1
+[2022-06-23 09:56:48] 125.129.123.211 : /classroom/progress.jsp?study_time=12&last_time=183&max_time=183&cuid=98&lid=41&_=1655945795215
+userId=1, cuid=98, lid=41, studyTime=12, lastTime=183, ret=1
+[2022-06-23 09:56:49] 125.129.123.211 : /classroom/progress.jsp?study_time=13&last_time=183&max_time=183&cuid=98&lid=41&_=1655945795216
+userId=1, cuid=98, lid=41, studyTime=13, lastTime=183, ret=1
+[2022-06-23 10:00:01] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=57&max_time=57&cuid=236&lid=41&_=1655945968529
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=57, ret=1
+[2022-06-23 10:00:31] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=116&max_time=116&cuid=236&lid=41&_=1655945968530
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=116, ret=1
+[2022-06-23 10:01:01] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=176&max_time=176&cuid=236&lid=41&_=1655945968531
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=176, ret=1
+[2022-06-23 10:01:04] 125.129.123.211 : /classroom/progress.jsp?study_time=2&last_time=183&max_time=183&cuid=236&lid=41&_=1655945968532
+userId=88, cuid=236, lid=41, studyTime=2, lastTime=183, ret=1
+[2022-06-23 10:01:08] 125.129.123.211 : /classroom/progress.jsp?study_time=7&last_time=183&max_time=183&cuid=236&lid=41&_=1655945968533
+userId=88, cuid=236, lid=41, studyTime=7, lastTime=183, ret=1
+[2022-06-23 10:05:52] 125.129.123.211 : /classroom/progress.jsp?study_time=2&last_time=1&max_time=183&cuid=98&lid=41&_=1655946348891
+userId=1, cuid=98, lid=41, studyTime=2, lastTime=1, ret=1
+[2022-06-23 10:10:18] 125.129.123.211 : /classroom/progress.jsp?study_time=5&last_time=5&max_time=183&cuid=236&lid=41&_=1655946607858
+userId=88, cuid=236, lid=41, studyTime=5, lastTime=5, ret=1
+[2022-06-23 10:11:23] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=6&max_time=183&cuid=236&lid=41&_=1655946652460
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=6, ret=2
+[2022-06-23 10:15:47] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=3&max_time=183&cuid=236&lid=41&_=1655946911783
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=3, ret=1
+[2022-06-23 10:16:18] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=3&max_time=183&cuid=236&lid=41&_=1655946911784
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=3, ret=1
+[2022-06-23 10:16:49] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=3&max_time=183&cuid=236&lid=41&_=1655946911785
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=3, ret=1
+[2022-06-23 10:17:00] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=3&max_time=3&cuid=98&lid=30&_=1655946988235
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=3, ret=1
+[2022-06-23 10:17:29] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=3&max_time=3&cuid=98&lid=30&_=1655946988236
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=3, ret=1
+[2022-06-23 10:17:30] 125.129.123.211 : /classroom/progress.jsp?study_time=8&last_time=7&max_time=183&cuid=236&lid=41&_=1655947037457
+userId=88, cuid=236, lid=41, studyTime=8, lastTime=7, ret=1
+[2022-06-23 10:17:39] 125.129.123.211 : /classroom/progress.jsp?study_time=10&last_time=3&max_time=3&cuid=98&lid=30&_=1655946988237
+userId=1, cuid=98, lid=30, studyTime=10, lastTime=3, ret=1
+[2022-06-23 10:19:40] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=31&max_time=183&cuid=98&lid=41&_=1655947149511
+userId=1, cuid=98, lid=41, studyTime=30, lastTime=31, ret=2
+[2022-06-23 10:20:10] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=61&max_time=183&cuid=98&lid=41&_=1655947149512
+userId=1, cuid=98, lid=41, studyTime=30, lastTime=61, ret=1
+[2022-06-23 10:20:41] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=92&max_time=183&cuid=98&lid=41&_=1655947149513
+userId=1, cuid=98, lid=41, studyTime=30, lastTime=92, ret=1
+[2022-06-23 10:21:03] 125.129.123.211 : /classroom/progress.jsp?study_time=22&last_time=114&max_time=183&cuid=98&lid=41&_=1655947149514
+userId=1, cuid=98, lid=41, studyTime=22, lastTime=114, ret=1
+[2022-06-23 10:21:08] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=117&max_time=183&cuid=98&lid=41&_=1655947264326
+userId=1, cuid=98, lid=41, studyTime=3, lastTime=117, ret=1
+[2022-06-23 10:21:21] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=128&max_time=183&cuid=98&lid=41&_=1655947271155
+userId=1, cuid=98, lid=41, studyTime=3, lastTime=128, ret=1
+[2022-06-23 10:21:43] 125.129.123.211 : /classroom/progress.jsp?study_time=1&last_time=1&max_time=1&cuid=98&lid=34&_=1655947301062
+userId=1, cuid=98, lid=34, studyTime=1, lastTime=1, ret=1
+[2022-06-23 10:22:44] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=3&max_time=183&cuid=236&lid=41&_=1655947358403
+userId=88, cuid=236, lid=41, studyTime=3, lastTime=3, ret=1
+[2022-06-23 10:23:02] 125.129.123.211 : /classroom/progress.jsp?study_time=4&last_time=7&max_time=183&cuid=236&lid=41&_=1655947375790
+userId=88, cuid=236, lid=41, studyTime=4, lastTime=7, ret=1
+[2022-06-23 10:26:04] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=33&max_time=33&cuid=98&lid=30&_=1655947532742
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=33, ret=1
+[2022-06-23 10:26:48] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532743
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:27:18] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532744
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:27:49] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532745
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:28:20] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532746
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:28:51] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532747
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:29:22] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532748
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:29:53] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532749
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:30:24] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532750
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:30:55] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532751
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:31:26] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532752
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:31:57] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532753
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:32:27] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532754
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:33:28] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532755
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:34:29] 125.129.123.211 : /classroom/progress.jsp?study_time=61&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532756
+userId=1, cuid=98, lid=30, studyTime=61, lastTime=44, ret=1
+[2022-06-23 10:35:30] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532757
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:36:31] 125.129.123.211 : /classroom/progress.jsp?study_time=61&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532758
+userId=1, cuid=98, lid=30, studyTime=61, lastTime=44, ret=1
+[2022-06-23 10:37:32] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532759
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:38:33] 125.129.123.211 : /classroom/progress.jsp?study_time=61&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532760
+userId=1, cuid=98, lid=30, studyTime=61, lastTime=44, ret=1
+[2022-06-23 10:39:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532761
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:40:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532762
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:41:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532763
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:42:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532764
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:43:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532765
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:44:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532766
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:45:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532767
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:46:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532768
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:47:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532769
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:48:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532770
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:49:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532771
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:50:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532772
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:51:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532773
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:52:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532774
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:53:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532775
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:54:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532776
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 10:55:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532777
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 10:56:05] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532778
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:56:36] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532779
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:57:07] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532780
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:57:38] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532781
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:58:09] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532782
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 10:58:40] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532783
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:59:11] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532784
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 10:59:42] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532785
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 11:00:13] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532786
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 11:00:44] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532787
+userId=1, cuid=98, lid=30, studyTime=31, lastTime=44, ret=1
+[2022-06-23 11:01:34] 125.129.123.211 : /classroom/progress.jsp?study_time=49&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532788
+userId=1, cuid=98, lid=30, studyTime=49, lastTime=44, ret=1
+[2022-06-23 11:02:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532789
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 11:03:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532790
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 11:04:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532791
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 11:05:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532792
+userId=1, cuid=98, lid=30, studyTime=59, lastTime=44, ret=1
+[2022-06-23 11:06:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532793
+userId=1, cuid=98, lid=30, studyTime=60, lastTime=44, ret=1
+[2022-06-23 11:07:04] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=44&max_time=44&cuid=98&lid=30&_=1655947532794
+userId=1, cuid=98, lid=30, studyTime=30, lastTime=44, ret=1
+[2022-06-23 11:12:36] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=10&max_time=183&cuid=236&lid=41&_=1655950351094
+userId=88, cuid=236, lid=41, studyTime=3, lastTime=10, ret=1
+[2022-06-23 11:13:09] 125.129.123.211 : /classroom/progress.jsp?study_time=11&last_time=21&max_time=183&cuid=236&lid=41&_=1655950376003
+userId=88, cuid=236, lid=41, studyTime=11, lastTime=21, ret=1
+[2022-06-23 11:14:10] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=50&max_time=183&cuid=236&lid=41&_=1655950418477
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=50, ret=1
+[2022-06-23 11:14:15] 125.129.123.211 : /classroom/progress.jsp?study_time=5&last_time=56&max_time=183&cuid=236&lid=41&_=1655950418478
+userId=88, cuid=236, lid=41, studyTime=5, lastTime=56, ret=1
+[2022-06-23 11:14:59] 125.129.123.211 : /classroom/progress.jsp?study_time=12&last_time=68&max_time=183&cuid=236&lid=41&_=1655950485210
+userId=88, cuid=236, lid=41, studyTime=12, lastTime=68, ret=1
+[2022-06-23 11:17:47] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=30&max_time=183&cuid=236&lid=41&_=1655950634795
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=30, ret=1
+[2022-06-23 11:18:17] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=59&max_time=183&cuid=236&lid=41&_=1655950634796
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=59, ret=1
+[2022-06-23 11:18:23] 125.129.123.211 : /classroom/progress.jsp?study_time=6&last_time=66&max_time=183&cuid=236&lid=41&_=1655950634797
+userId=88, cuid=236, lid=41, studyTime=6, lastTime=66, ret=1
+[2022-06-23 11:22:55] 125.129.123.211 : /classroom/progress.jsp?study_time=8&last_time=8&max_time=183&cuid=236&lid=41&_=1655950964777
+userId=88, cuid=236, lid=41, studyTime=8, lastTime=8, ret=1
+[2022-06-23 11:23:02] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=3&max_time=183&cuid=236&lid=41&_=1655950975795
+userId=88, cuid=236, lid=41, studyTime=3, lastTime=3, ret=1
+[2022-06-23 11:23:54] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=3&max_time=183&cuid=236&lid=41&_=1655951028379
+userId=88, cuid=236, lid=41, studyTime=3, lastTime=3, ret=1
+[2022-06-23 11:24:34] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=32&max_time=183&cuid=236&lid=41&_=1655951042504
+userId=88, cuid=236, lid=41, studyTime=30, lastTime=32, ret=1
+[2022-06-23 11:24:37] 125.129.123.211 : /classroom/progress.jsp?study_time=3&last_time=36&max_time=183&cuid=236&lid=41&_=1655951042505
+userId=88, cuid=236, lid=41, studyTime=3, lastTime=36, ret=1
+[2022-06-23 13:31:17] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=1&max_time=1&cuid=303&lid=41&_=1655958646102
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=1, ret=1
+[2022-06-23 13:31:47] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=1&max_time=1&cuid=303&lid=41&_=1655958646103
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=1, ret=1
+[2022-06-23 13:32:17] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=1&max_time=1&cuid=303&lid=41&_=1655958646104
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=1, ret=1
+[2022-06-23 13:32:47] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=1&max_time=1&cuid=303&lid=41&_=1655958646105
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=1, ret=1
+[2022-06-23 13:33:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=33&max_time=33&cuid=303&lid=41&_=1655958646106
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=33, ret=1
+[2022-06-23 13:34:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646107
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:34:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646108
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:35:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646109
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:35:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646110
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:36:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646111
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:36:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646112
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:37:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646113
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:37:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646114
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:38:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646115
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:38:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646116
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:39:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646117
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:39:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646118
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:40:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646119
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:40:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646120
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:41:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646121
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:41:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646122
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:42:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646123
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:42:33] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646124
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:43:03] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646125
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:43:34] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646126
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:44:05] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646127
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:44:36] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646128
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:45:07] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646129
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:45:38] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646130
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:46:09] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646131
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:46:40] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646132
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:47:11] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646133
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:47:42] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646134
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:48:34] 125.129.123.211 : /classroom/progress.jsp?study_time=52&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646135
+userId=89, cuid=303, lid=41, studyTime=52, lastTime=63, ret=1
+[2022-06-23 13:49:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646136
+userId=89, cuid=303, lid=41, studyTime=60, lastTime=63, ret=1
+[2022-06-23 13:50:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646137
+userId=89, cuid=303, lid=41, studyTime=59, lastTime=63, ret=1
+[2022-06-23 13:51:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646138
+userId=89, cuid=303, lid=41, studyTime=60, lastTime=63, ret=1
+[2022-06-23 13:52:34] 125.129.123.211 : /classroom/progress.jsp?study_time=59&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646139
+userId=89, cuid=303, lid=41, studyTime=59, lastTime=63, ret=1
+[2022-06-23 13:53:34] 125.129.123.211 : /classroom/progress.jsp?study_time=60&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646140
+userId=89, cuid=303, lid=41, studyTime=60, lastTime=63, ret=1
+[2022-06-23 13:54:04] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646141
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:54:35] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646142
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:55:06] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646143
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:55:37] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646144
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:56:08] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646145
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 13:56:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646146
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:57:08] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646147
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:57:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646148
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:58:08] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646149
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:58:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646150
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:59:08] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646151
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 13:59:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646152
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:00:08] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646153
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:00:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646154
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:01:08] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646155
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:01:38] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646156
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:02:09] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646157
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:02:41] 125.129.123.211 : /classroom/progress.jsp?study_time=30&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646158
+userId=89, cuid=303, lid=41, studyTime=30, lastTime=63, ret=1
+[2022-06-23 14:03:11] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646159
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 14:03:42] 125.129.123.211 : /classroom/progress.jsp?study_time=31&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646160
+userId=89, cuid=303, lid=41, studyTime=31, lastTime=63, ret=1
+[2022-06-23 14:03:54] 125.129.123.211 : /classroom/progress.jsp?study_time=11&last_time=63&max_time=63&cuid=303&lid=41&_=1655958646161
+userId=89, cuid=303, lid=41, studyTime=11, lastTime=63, ret=1

@@ -1,0 +1,79 @@
+<div id="contet_area" style="width: 100%">
+	<h3 class="hide">컨텐츠 내용</h3>
+	<div class="path">
+		<ol class="path_list">
+			<li>수강신청</li>
+			<li>전체과정</li>
+		</ol>
+	</div>
+	<h4 class="content_title">전체과정</h4>
+	<div class="content_body">
+		<form name="form1" method="get">
+		<input type="hidden" id="course_ord" name="ord" value="ASC"/>
+		<div class="tb_top">
+			<div class="search_form_wrap1">
+				<div class="search_form">
+					<div class="btn_sort">
+						<span><input type="text" name="s_keyword" class="search_input" /></span>
+						<span><input type="submit" class="button gray small " value="SEARCH" /></span>
+						<span><input type="image" id="course_ord_btn" src="/common/images/ord.png" class="button small" onclick="goSubmit()"/></span>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		</form>
+		{{form_script}}
+
+		<div class="type_chart">
+			<ul class="list_li course_gallery">
+				<!--@loop(list)-->
+				<li>
+					<!-- 이미지 영역 -->
+					<div class="cimg">
+						<a href="../course/course_view.jsp?id={{list.id}}">
+							<img src="{{list.course_file_url}}" alt="{{list.course_nm}}" onerror="ImageError(this, '/common/images/default/noimage_course.gif')" />
+						</a>
+					</div>
+
+					<div class="ccont">
+						<div class="ctitle">
+							<a href="../course/course_view.jsp?id={{list.id}}">{{list.course_nm}}</a>
+						</div>
+
+						<div class="cday">
+							신청기간 : 상시
+						</div>
+
+						<!-- 수강신청 버튼 -->
+						<div class="cbtn">
+							<a href="../course/course_view.jsp?id={{list.id}}" title="수강신청하기" class="button blue medium ">수강신청</a>
+						</div>
+					</div>
+
+				</li>
+				<!--/loop(list)-->
+				<!--@nif(list)-->
+				<li class="nodata">해당 과정이 없습니다.</li>
+				<!--/nif(list)-->
+			</ul>
+		</div>
+
+		<div class="page_bar">
+			{{pagebar}}
+		</div>
+	</div>
+</div>
+
+<script language="JavaScript">
+function goSubmit() {
+	var value = document.getElementById("course_ord").value;
+
+	if(value === null || value === "DESC") {
+		document.getElementById("course_ord").value = "ASC";
+	} else if( value === "ASC") {
+		document.getElementById("course_ord").value = "DESC";
+	}
+	document.forms['form1'].submit();
+}
+</script>

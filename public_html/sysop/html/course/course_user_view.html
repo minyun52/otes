@@ -1,0 +1,123 @@
+<table class="c_tb01" cellpadding="0" cellspacing="0">
+<tr>
+    <td class="c_th01">수강정보</td>
+</tr>
+</table>
+
+
+<table class="f_tb01">
+<colgroup>
+    <col style="width: 120px;">
+    <col style="width: auto;">
+    <col style="width: 120px;">
+    <col style="width: auto;">
+</colgroup>
+<tr>
+    <td class="f_th01">회원명</td>
+    <td class="f_td01">{{cuinfo.user_nm}}</td>
+    <td class="f_th01">회원아이디</td>
+    <td class="f_td01">{{cuinfo.login_id}}</td>
+</tr>
+<tr>
+    <td class="f_th01">수료 여부</td>
+    <td class="f_td01" colspan="3"><span class="label">{{cuinfo.complete_conv}}</span></td>
+</tr>
+<tr>
+    <td class="f_th01">학습기간</td>
+    <td class="f_td01" colspan="3">
+        {{cuinfo.start_date}} - {{cuinfo.end_date}}
+    </td>
+</tr>
+</table>
+
+<table class="c_tb01" >
+<tr>
+    <td class="c_th01">수료기준</td>
+</tr>
+</table>
+
+<table class="l_tb01" style="table-layout:fixed;">
+    <colgroup>
+        <col style="width: 100px;">
+        <col style="width: 130px;">
+        <col style="width: 130px;">
+        <col style="width: auto;">
+    </colgroup>
+<tr>
+    <td class="l_th03">항목</td>
+    <td class="l_th03">수료 기준</td>
+    <td class="l_th03">수강생 현황</td>
+    <td class="l_th03">비고</td>
+</tr>
+<tr>
+    <td class="f_th01">진도율</td>
+    <td class="l_td01">{{course.limit_progress}}% 이상</td>
+    <td class="l_td01">{{cuinfo.progress_ratio}}%</td>
+    <td class="l_td01">-</td>
+</tr>
+<tr>
+    <td class="f_th01">총점</td>
+    <td class="l_td01">{{course.limit_progress}}점 이상</td>
+    <td class="l_td01">{{cuinfo.progress_ratio}}점</td>
+    <td class="l_td01">-</td>
+</tr>
+</table>
+
+<table class="c_tb01">
+<tr>
+    <td class="c_th01">진도현황</td>
+</tr>
+</table>
+
+<table class="l_tb01">
+    <colgroup>
+        <col style="width: 70px;">
+        <col style="width: auto;">
+        <col style="width: 80px;">
+        <col style="width: 80px;">
+        <col style="width: 80px;">
+        <col style="width: 80px;">
+        <col style="width: 70px;">
+        <col style="width: 100px;">
+    </colgroup>
+<thead>
+<tr>
+    <td class="l_th03">강의</td>
+    <td class="l_th03">강의명</td>
+    <td class="l_th03">강의(분)</td>
+    <td class="l_th03">인정(분)</td>
+    <td class="l_th03">학습(분)</td>
+    <td class="l_th03">최대위치</td>
+    <td class="l_th03">완료여부</td>
+    <td class="l_th03">완료일</td>
+</tr>
+</thead>
+<tbody>
+<!--@loop(lessons)-->
+<tr>
+    <td class="l_td01">{{lessons.sort}}차시</td>
+    <td class="l_td01 ltd">{{lessons.lesson_nm}}</a></td>
+    <td class="l_td01 rtd">{{lessons.total_time}}</td>
+    <td class="l_td01 rtd">{{lessons.complete_time}}</td>
+    <td class="l_td01 rtd">{{lessons.study_time}}</td>
+    <td class="l_td01 rtd">{{lessons.max_time}}</td>
+    <td class="l_td01">{{lessons.complete_yn_conv}}</td>
+    <td class="l_td01">{{lessons.complete_date_conv}}</td>
+</tr>
+<!--/loop(lessons)-->
+</tbody>
+</table>
+
+
+<!--@nif(lessons)-->
+<table class="n_tb01">
+    <tr>
+        <td class="n_td01">등록된 강의가 없습니다.</td>
+    </tr>
+</table>
+<!--/nif(lessons)-->
+
+<script>
+    addEvent("onload", function() { setLabel(); });
+</script>
+

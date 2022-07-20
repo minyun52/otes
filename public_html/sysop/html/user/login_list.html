@@ -1,0 +1,130 @@
+<form name="form1" method="get">
+<input type="hidden" name="ord" value="">
+<input type="hidden" name="mode" value="">
+
+<table class="t_tb01">
+<colgroup>
+    <col style="width:120px;">
+    <col>
+    <col style="width:120px;">
+    <col>
+</colgroup>
+<tr>
+    <td class="t_th01">구분</td>
+    <td class="t_td01">
+        <label><input type="radio" name="s_user_type" class="ipt01" value="" checked>전체</label> &nbsp;
+        <!--@loop(user_type_list)-->
+        <label><input type="radio" name="s_user_type" class="ipt01" value="{{user_type_list.id}}">{{user_type_list.name}}</label> &nbsp;
+        <!--/loop(user_type_list)-->
+    </td>
+    <td class="t_th01">기간</td>
+    <td class="t_td01">
+        <input type="text" name="s_sdate" size="10" class="cal01"> - <input type="text" name="s_edate" size="10" class="cal01">
+        <span style="margin-left:10px;">
+            <input type="button" class="btn_simp" _sdate="{{date.today}}" _edate="{{date.today}}" onclick="setDate(this)" value="오늘">
+            <input type="button" class="btn_simp" _sdate="{{date.sw}}" _edate="{{date.ew}}" onclick="setDate(this)" value="이번주">
+            <input type="button" class="btn_simp" _sdate="{{date.sm}}" _edate="{{date.em}}" onclick="setDate(this)" value="이번달">
+        </span>
+        <script>
+        function setDate(el) {
+            var f = document.forms['form1'];
+            f['s_sdate'].value = el.getAttribute("_sdate");
+            f['s_edate'].value = el.getAttribute("_edate");
+            f.submit();
+        }
+        </script>
+    </td>
+</tr>
+<tr>
+    <td class="t_th01">유형</td>
+    <td class="t_td01">
+        <label><input type="radio" name="s_login_type" class="ipt01" value="" checked>전체</label> &nbsp;
+        <!--@loop(login_type_list)-->
+        <label><input type="radio" name="s_login_type" class="ipt01" value="{{login_type_list.id}}">{{login_type_list.name}}</label> &nbsp;
+        <!--/loop(login_type_list)-->
+    </td>
+    <td class="t_th01">검색</td>
+    <td class="t_td01">
+        <select name="s_field" onchange="document.forms['form1']['s_keyword'].focus();">
+            <option value=""> - 전체 - </option>
+            <option value="u.login_id">로그인아이디</option>
+            <option value="u.user_nm">이름</option>
+            <option value="a.ip_addr">아이피주소</option>
+            <option value="a.device">기기정보</option>
+        </select>
+        <input type="text" name="s_keyword" size="30">
+        <button type="submit" class="bttn2">검색</button>
+    </td>
+</tr>
+</table>
+
+<table class="a_tb01">
+    <tr>
+        <td class="a_th01">
+            {{list_total}}
+            <select name="s_listnum" onchange="document.forms['form1'].submit();">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            건씩 보기
+        </td>
+        <td class="a_td01">
+            <button type="button" class="bttn2" onclick="goExcel();">EXCEL</button>
+        </td>
+    </tr>
+</table>
+</form>
+{{form_script}}
+
+<form name="form2" method="post">
+<table class="l_tb01">
+    <colgroup>
+        <col style="width: 70px;">
+        <col style="width: 100px;">
+        <col style="width: 100px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+        <col style="width: 70px;">
+        <col style="width: 150px;">
+        <col style="width: 150px;">
+    </colgroup>
+    <tr>
+        <td class="l_th01">No</td>
+        <td class="l_th01"><span class="l_sort01" id="CL_u.user_nm" onclick="ListSort(this, '{{ord}}')">이름</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_u.login_id" onclick="ListSort(this, '{{ord}}')">로그인아이디</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.user_type" onclick="ListSort(this, '{{ord}}')">구분</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.login_type" onclick="ListSort(this, '{{ord}}')">유형</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.device" onclick="ListSort(this, '{{ord}}')">기기</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.ip_addr" onclick="ListSort(this, '{{ord}}')">IP주소</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.reg_date" onclick="ListSort(this, '{{ord}}')">등록일</span></td>
+    </tr>
+    <!--@loop(list)-->
+    <tr align="center">
+        <td class="l_td01">{{list.__ord}}</td>
+        <td class="l_td01">{{list.user_nm}}</td>
+        <td class="l_td01">{{list.login_id}}</td>
+        <td class="l_td01">{{list.user_type_conv}}</td>
+        <td class="l_td01">{{list.login_type_conv}}</td>
+        <td class="l_td01">{{list.device}}</td>
+        <td class="l_td01">{{list.ip_addr}}</td>
+        <td class="l_td01">{{list.reg_date_conv}}</td>
+    </tr>
+    <!--/loop(list)-->
+</table>
+<!--@nif(list)-->
+<table class="n_tb01">
+    <tr>
+        <td class="n_td01">해당 자료가 없습니다.</td>
+    </tr>
+</table>
+<!--/nif(list)-->
+
+<table class="p_tb01">
+    <tr>
+        <td class="p_td01">{{pagebar}}</td>
+    </tr>
+</table>
+</form>
+
+<script>ListSort(null, "{{ord}}");</script>

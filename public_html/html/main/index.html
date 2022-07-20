@@ -1,0 +1,62 @@
+<div class="wrap">
+	<script type="text/javascript">
+		$(function(){
+			$('#slides_30').slides({
+				preload: true,
+				play: 5000,
+				pause: 2500,
+				generatePagination: false,
+				hoverPause: true
+			});
+		});
+	</script>
+	<style type="text/css">
+		#main_visual_30 {height:500px;}
+		#main_visual_30 .slides_main .slides_container, .slides_main .slides_container div {height:500px;}
+		#main_visual_30 .slides_main .slides_container .slides_control {height:500px !important;}
+	</style>
+	<div id="container" class="main">
+		<h2 class="hide">메인 배너</h2>
+		<div id="main_visual_30" class="main_visual">
+			<div id="slides_30" class="slides_main">
+				<div class="slides_container">
+					<div class="slide" style="background-image:url('/common/images/banner1.png');">
+						<img class="slide_link_blank" src="/common/images/default/blank.png" alt="new01_일반과정이벤트" />
+					</div>
+				</div>
+				<div class="slides_container">
+					<div class="slide" style="background-image:url('/common/images/banner2.png');">
+						<img class="slide_link_blank" src="/common/images/default/blank.png" alt="new01_일반과정이벤트" />
+					</div>
+				</div>
+				<div class="slides_container">
+					<div class="slide" style="background-image:url('/common/images/banner3.png');">
+						<img class="slide_link_blank" src="/common/images/default/blank.png" alt="new01_일반과정이벤트" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="main_outer">
+		<div class="main_inner">
+			<div class="horizontal_wrap">
+				<h3 class="top_title">추천과정</h3>
+				<ul class="horizontal_list">
+					<!--@loop(list)-->
+					<li class="first">
+						<span class="img_box">
+							<a href="../course/course_view.jsp?id={{list.id}}" title="{{list.course_nm}}" >
+								<img src="{{list.course_file_url}}" alt="{{list.course_nm}}" />
+							</a>
+						</span>
+						<span class="list_subject">
+							<a href="../course/course_view.jsp?id={{list.id}}" title="{{list.course_nm}}">{{list.course_nm}}</a>
+						</span>
+					</li>
+					<!--/loop(list)-->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

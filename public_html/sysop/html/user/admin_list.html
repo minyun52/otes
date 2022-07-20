@@ -1,0 +1,112 @@
+<form name="form1" method="get">
+<input type="hidden" name="ord" value="">
+<input type="hidden" name="mode" value="">
+
+<table class="t_tb01">
+    <colgroup>
+        <col style="width:120px;">
+        <col>
+        <col style="width:120px;">
+        <col>
+    </colgroup>
+    <tr>
+        <td class="t_th01">구분</td>
+        <td class="t_td01" colspan="3">
+            <label><input type="radio" name="s_user_type" class="ipt01" value="" checked/>전체</label> &nbsp;
+            <!--@loop(admin_types)-->
+            <label><input type="radio" name="s_user_type" class="ipt01" value="{{admin_types.id}}"/>{{admin_types.name}}</label> &nbsp;
+            <!--/loop(admin_types)-->
+        </td>
+    </tr>
+    <tr>
+        <td class="t_th01">상태</td>
+        <td class="t_td01">
+            <label><input type="radio" name="s_status" class="ipt01" value="" checked/>전체</label> &nbsp;
+            <!--@loop(status_list)-->
+            <label><input type="radio" name="s_status" class="ipt01" value="{{status_list.id}}"/>{{status_list.name}}</label> &nbsp;
+            <!--/loop(status_list)-->
+        </td>
+        <td class="t_th01">검색</td>
+        <td class="t_td01">
+            <select name="s_field" onchange="document.forms['form1']['s_keyword'].focus();">
+                <option value=""> - 전체 - </option>
+                <option value="a.login_id">로그인아이디</option>
+                <option value="a.user_nm">이름</option>
+            </select>
+            <input type="text" name="s_keyword" size="30">
+            <button type="submit" class="bttn2">검색</button>
+        </td>
+    </tr>
+</table>
+
+<table class="a_tb01">
+    <tr>
+        <td class="a_th01">
+            {{list_total}}
+            <select name="s_listnum" onchange="document.forms['form1'].submit();">
+                <option value="20">20</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+            건씩 보기
+        </td>
+        <td class="a_td01">
+            <button type="button" class="bttn2 sky" onclick="location.href='user_insert.jsp?mode=ADMIN';">관리자등록</button>
+        </td>
+    </tr>
+</table>
+</form>
+{{form_script}}
+
+<form name="form2" method="post">
+<table class="l_tb01">
+    <colgroup>
+        <col style="width: 70px;">
+        <col style="width: 70px;">
+        <col style="width: 120px;">
+        <col style="width: 120px;">
+        <col style="width: auto;">
+        <col style="width: auto;">
+        <col style="width: 70px;">
+    </colgroup>
+    <tr>
+        <td class="l_th01">No</td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.user_type" onclick="ListSort(this, '{{ord}}')">구분</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.user_nm" onclick="ListSort(this, '{{ord}}')">이름</span></td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.login_id" onclick="ListSort(this, '{{ord}}')">로그인아이디</span></td>
+        <td class="l_th01">휴대전화번호</td>
+        <td class="l_th01">이메일</td>
+        <td class="l_th01"><span class="l_sort01" id="CL_a.status" onclick="ListSort(this, '{{ord}}')">상태</span></td>
+    </tr>
+    <!--@loop(list)-->
+    <tr align="center">
+        <td class="l_td01">{{list.__ord}}</td>
+        <td class="l_td01"><span class="label">{{list.user_type_conv}}</span></td>
+        <td class="l_td01">{{list.user_nm}}</td>
+        <td class="l_td01"><a href="user_modify.jsp?id={{list.id}}&mode=ADMIN&{{list_query}}">{{list.login_id}}</a></td>
+        <td class="l_td01">{{list.mobile}}</td>
+        <td class="l_td01">{{list.email}}</td>
+        <td class="l_td01">{{list.status_conv}}</td>
+    </tr>
+    <!--/loop(list)-->
+</table>
+<!--@nif(list)-->
+<table class="n_tb01">
+    <tr>
+        <td class="n_td01">해당 자료가 없습니다.</td>
+    </tr>
+</table>
+<!--/nif(list)-->
+
+<table class="p_tb01">
+    <tr>
+        <td class="p_td01">{{pagebar}}</td>
+    </tr>
+</table>
+
+</form>
+
+<script>
+    ListSort(null, "{{ord}}");
+    addEvent("onload", function() { setLabel(); });
+</script>

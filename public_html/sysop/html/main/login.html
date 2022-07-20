@@ -1,0 +1,33 @@
+<style>
+* { box-sizing:border-box; font-family: "Malgun Gothic", "맑은 고딕", Arial, Dotum, Gulim; }
+html, body, #container { background-color:#f8f8f8; width:100%; height:auto; text-align:center; }
+
+#login { width:400px; margin:80px auto 0; background-color:#f5f5f5; border:1px solid #dedede; border-radius:4px; text-align:center; }
+#login #sitelogo { border-top:5px solid #0d4991; border-radius:4px 4px 0 0; padding:40px 10px 35px; width:100%; vertical-align:middle; background-color:#ffffff; }
+#login #sitelogo img { max-width:100%; max-height:200px; }
+#login #description { padding:20px 0 10px; }
+
+#login #login_box { width:300px; margin:0 auto; }
+#login #login_box input { display:block; width:100%; text-align:left; margin-top:10px; padding:5px 10px; height:42px; font-size:20px;}
+#login #login_box button { width:100%; background-color:#0d4991; color:#ffffff; font-size:16px; border:1px solid #0d4991; border-radius:4px; padding:10px; margin:30px 0; }
+</style>
+
+<div id="container">
+
+    <div id="login">
+        <div id="sitelogo"><img src="/sysop/html/images/admin/main/ojt_logo.png" alt="enter 오픈 더 이러닝"></div>
+        <div id="description">Enter 오픈 더 이러닝 사이트에 오신 것을 환영합니다.</div>
+        <div id="login_box">
+            <form name="form1" method="post" action="/sysop/main/login.jsp" target="sysfrm">
+                
+                <input tabindex="1" type="text" name="login_id" id="login_id" placeholder="아이디">
+                <input tabindex="2" type="password" name="passwd" id="passwd" placeholder="패스워드">
+                <button tabindex="3" type="submit">로그인</button>
+            </form>
+            {{form_script}}
+        </div>
+    </div>
+    <div id="copyright"> copyright</div>
+</div>
+
+<iframe name="sysfrm" id="sysfrm" style="display:none; width:172px; height:185px; z-index:6000"></iframe>

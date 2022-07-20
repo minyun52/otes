@@ -1,0 +1,123 @@
+<!--@include(/course/course_tab.html)-->
+
+<table class="c_tb01">
+<tr>
+    <td class="c_th01">과정 정보</td>
+    <td class="c_td01"></td>
+</tr>
+</table>
+
+<table class="f_tb01">
+    <colgroup>
+        <col style="width:120px;">
+        <col style="width:auto;">
+        <col style="width:120px;">
+        <col style="width:auto;">
+    </colgroup>
+<tr>
+    <td class="f_th01">과정명</td>
+    <td class="f_td01" colspan="3">
+        <strong>{{course.course_nm}}</strong>
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">신청기간</td>
+    <td class="f_td01">
+        <strong>상시</strong>
+    </td>
+    <td class="f_th01">학습일수</td>
+    <td class="f_td01">
+        <strong>{{course.lesson_day}} 일</strong>
+    </td>
+</tr>
+</table>
+
+<form name="form1" method="POST" target="sysfrm">
+<table class="a_tb01" style="width:100%">
+    <tr>
+        <td class="a_th01">Total : {{list_total}}건 </td>
+        <td class="a_td01" style="font-weight:normal;">
+            <button type="button" class="bttn2" onclick="OpenWindows('../content/lesson_insert.jsp?cid={{cid}}', '', 900, 800);">강의등록</button>
+            <button type="button" class="bttn2" onclick="delLesson();">선택삭제</button>
+        </td>
+    </tr>
+</table>
+
+<table id="lesson_list" class="l_tb01" style="margin-top:0px">
+<colgroup>
+    <col width="40">
+    <col width="160">
+    <col width="760">
+    <col width="80">
+    <col width="80">
+    <col width="40">
+    <col width="30">
+</colgroup>
+<thead>
+<tr class="nodrag nodrop">
+    <td class="l_th01">차시</td>
+    <td class="l_th01">콘텐츠타입</td>
+    <td class="l_th01">강의명</td>
+    <td class="l_th01">학습시간</td>
+    <td class="l_th01">인정시간</td>
+    <td class="l_th01">순서</td>
+    <td class="l_th01"><input type="checkbox" onclick="AutoCheck('form1', 'idx');"/></td>
+</tr>
+</thead>
+<tbody>
+<!--@loop(list)-->
+<tr>
+    <input type="hidden" value="{{list.id}}" name="lesson_id"/>
+    <td class="l_td01">{{list.sort}}</td>
+    <td class="l_td01">{{list.lesson_type}}</td>
+    <td class="l_td01 ltd" title ="{{list.lesson_nm}}">
+       <a href="javaScript:OpenWindows('../content/lesson_modify.jsp?cid={{list.course_id}}&id={{list.id}}', '', 900, 800);">{{list.lesson_nm}}</a>
+    </td>
+    <td class="l_td01">{{list.total_time}}분</td>
+    <td class="l_td01">{{list.complete_time}}분</td>
+    <td class="l_td01 l_sort02">↕</td>
+    <td class="l_td01"><input type="checkbox" name="idx" value="{{list.id}}"></td>
+</tr>
+<!--/loop(list)-->
+
+<!--@nif(list)-->
+<table class="n_tb01">
+    <tr>
+        <td class="n_td01">등록된 강의가 없습니다.</td>
+    </tr>
+</table>
+<!--/nif(list)-->
+
+</tbody>
+</table>
+
+<table class="b_tb01">
+    <tr>
+        <td class="b_th01"></td>
+        <td class="b_td01"><button type="submit" class="bttn2">저장</button></td>
+    </tr>
+</table>
+</form>
+{{form_script}}
+
+
+<script type="text/javascript" src="/common/js/jquery.tablednd.0.7.min.js"></script>
+<script type="text/javascript">
+
+
+//삭제
+function delLesson() {
+    if(!GetFormValue("form1", "idx")) {
+        alert("선택된 강의가 없습니다.");
+        return;
+    }
+    if(!confirm("선택한 강의를 삭제하시겠습니까?")) return;
+    location.href = "course_lesson.jsp?mode=del&idx=" + GetFormValue("form1", "idx") + "&{{query}}";
+}
+
+$(document).ready(function() {
+    $("#lesson_list").tableSortable();
+});
+
+
+</script>

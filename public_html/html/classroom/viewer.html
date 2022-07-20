@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{{lesson_nm_conv}}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <script language="javascript" type="text/javascript" charset="utf-8" src="/common/js/jquery-1.9.1.min.js"></script>
+    <script language="javascript" type="text/javascript" charset="utf-8" src="/common/js/common.js"></script>
+    <script src="https://content.jwplatform.com/libraries/FXZxytys.js"></script>
+    <script language="javascript" type="text/javascript" charset="utf-8" src="/common/jwplayer/jwplayer.js"></script>
+    <style>
+        html, body {
+            font-family:"맑은 고딕",Malgun Gothic, "돋움", Dotum, "굴림", Gulim, Arial, sans-serif;
+            width:100%;
+            height:100%;
+            margin:0;
+            background-color:#000000;
+            color:#ffffff;
+            overflow:hidden;
+        }
+
+        @media screen and (max-width:736px) {
+            /* #controller #ctrl_close { display:list-item; } */
+            #next_lesson { font-size:5vmin; background-color:#343a40; }
+            #next_lesson .next_info { height:100%; padding:0.938em; }
+        }
+
+        #player_wrapper { margin:0 auto; height:100%; }
+        #player { margin:0 auto; height:100%; color:#ffffff; font-weight:bold; font-size:1em; text-align:center; }
+    </style>
+</head>
+<body>
+<div id="player_wrapper">
+    <div id="player">플레이어 로딩중입니다.</div>
+</div>
+
+<script type="text/javascript">
+    try {
+        jwplayer("player").setup({
+            file: "{{lesson_url}}",
+            image: "{{image_url}}",
+            type: "{{file_type}}",
+            width: '100%',
+            height: '100%',
+            autostart: 'false',
+            playbackRateControls: [1]
+        });
+    } catch (e) {
+        alert("플레이어 실행 시 오류가 발생하였습니다.");
+    }
+
+    var playTime = 0;	//재생시간
+    var pst = new Date().getTime();	//재생시작 시간
+
+    var thisPos = 0;	//현재위치
+    var prePos = {{last_time}};		//이전위치
+    var maxPos = {{max_time}};		//최대 이동위치
+
+    var startTime = {{start_pos}};
+    var stimer;
+    var _direct = false
+    jwplayer().on('play', function() {
+        // if(isMobile && _direct == false && startTime > 0) seekPlay();
+        if(_direct == false && startTime > 0) seekPlay();
+        startTimer();
+    });
+    jwplayer().on('stop', stop);
+    jwplayer().on('time', checkTime);
+    jwplayer().on('complete', function() {
+        //$("#next_lesson").show();
+        stop();
+    });
+    jwplayer().on('error', onError);
+    jwplayer().on('ready', function() {
+        $("#player_controlbar").append($("#controller"));
+        var mode = "html5";
+        try {
+            mode = jwplayer().getProvider().name;
+        } catch(e) {
+            mode = jwplayer().getRenderingMode();
+        }
+        if(mode == "html5") {
+            videoTag = document.querySelector('video');
+            if(videoTag.playbackRate) {
+
+            } else {
+                $("#ctrl_speed").remove();
+            }
+        } else {
+            $("#ctrl_speed").remove();
+        }
+        if(mode == 'html5' && _direct == false && startTime > 0) seekPlay();
+    });
+
+    function seekPlay() {
+        pause();
+        if(confirm("이전에 학습한 이력이 있습니다. 이어듣기를 하시겠습니까?")) {
+            seek(startTime);
+        } else {
+            play();
+            startTime = 0
+        };
+        _direct = true;
+    }
+
+    function setSpeed(currentRate) {
+        videoTag.playbackRate = currentRate;
+        videoTag.defaultPlaybackRate = currentRate;
+        if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+            jwplayer().seek(jwplayer().getPosition());
+        }
+        hideControllerSub();
+    };
+
+    function onSetupError(m) {
+        alert(m.message);
+    }
+
+    function onError(m) {
+        alert("동영상 재생시 오류가 발생했습니다.\n" + m.message);
+        //closeWindow();
+    }
+
+    function checkTime() {
+        thisPos = Math.round(jwplayer().getPosition());
+        //이동여부
+        // if(!isSeek && prePos + 5 < thisPos && maxPos < thisPos) {
+        if(prePos + 5 < thisPos && maxPos < thisPos) {
+            seek(maxPos); return;
+        }
+        maxPos = thisPos > maxPos ? thisPos : maxPos;
+        prePos = maxPos;
+    }
+
+    //전체화면
+    function setFullscreen() {
+        jwplayer().setFullscreen(!jwplayer().getFullscreen(false));
+    }
+
+    //재생
+    function play() {
+        jwplayer().play(true);
+    }
+
+    //일지정지
+    function pause() {
+        jwplayer().pause(true);
+    }
+
+    //재시작
+    function replay() {
+        $("#next_lesson").hide();
+        jwplayer().seek(0);
+        play();
+    }
+
+    //진행위치 이동
+    function seek(pos) {
+        if(pos < 0) pos = 0;
+        jwplayer().seek(pos);
+        play();
+    }
+
+    function stop() {
+        stopTimer();
+        save();
+        try {
+            opener.location.reload();
+        } catch (e) {}
+    }
+
+    function save() {
+        try {
+            $.ajaxSetup({cache:false});
+            $.get('/classroom/progress.jsp?study_time=' + playTime + '&last_time=' + thisPos + '&max_time=' + maxPos + '&cuid={{cuid}}&lid={{lid}}', function(data) {
+                trace("result:" + data);
+                if(data == '2' && top.opener) top.opener.location.reload();
+            });
+            playTime = 0;
+        } catch (e) { }
+    }
+
+    function trace(s) {
+        try { console.log(s); } catch(e) {}
+    }
+
+    function startTimer() {
+        if(stimer != null) stopTimer();
+        pst = new Date().getTime();
+        stimer = window.setInterval(function() {
+            stopTimer();
+            save();
+            startTimer();
+        }, 30000);
+        trace("start:" + stimer);
+    }
+
+    function stopTimer() {
+        playTime = parseInt((new Date().getTime() - pst) / 1000);
+        if(stimer != null) {
+            trace("stop:" + stimer);
+            window.clearInterval(stimer);
+            stimer = null;
+        }
+    }
+
+    addEvent("onunload", stop);
+
+    var $playerArea = $('#player_wrapper');
+    var $window = $(window).on('resize', function(){
+        var height = $(this).height();
+        $playerArea.height(height);
+    }).trigger('resize'); //on page load
+    if(isMobile) $("#ctrl_close").show();
+
+    function showControllerSub(v) { $(".ctrl_sub." + v).slideToggle("fast"); }
+    function hideControllerSub() { $(".ctrl_sub").slideUp("fast"); }
+    function closeWindow() {
+        if(parent) {
+            parent.history.go(-1);
+            parent.window.close();
+        } else {
+            history.go(-1);
+            window.close();
+        }
+    }
+
+</script>
+
+</body>
+</html>

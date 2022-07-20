@@ -1,0 +1,60 @@
+
+<div id="lnb_contents_wrapper">
+    <div id="lnb_contents">
+        <ul class="acc-nav" id="lnb-5" style="width:100%;">
+            <li class="acc-title acc-node-1">
+                <a id="tm" href="#">회원관리<span class="arrow"></span></a>
+                <ul id="m1" class="acc-sub open" style="display: block;">
+                    <li class="acc-node-2">
+                        <a href="../user/user_list.jsp" target="_Main">회원관리</a>
+                    </li>
+                    <li class="acc-node-3">
+                        <a href="../user/login_list.jsp" target="_Main">접속이력</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="acc-title acc-node-4">
+                <a id="cm" href="#">과정관리<span class="arrow"></span></a>
+                <ul id="m2" class="acc-sub" style="display: block;">
+                    <li class="acc-node-5">
+                        <a href="../course/course_list.jsp" target="_Main">과정관리</a>
+                    </li>
+                    <li class="acc-node-6">
+                        <a href="../course/user_list.jsp" target="_Main">통합수강생관리</a>
+                    </li>
+                </ul>
+
+            <li class="acc-title acc-node-18">
+                <a href="../user/admin_list.jsp" target="_Main">관리자관리</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    $(function() {
+        $("#tm").on("click", function() {
+            var el = $('#m1');
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+                el.slideUp(200);
+            } else {
+                el.addClass('open');
+                el.slideDown(200);
+            }
+        })
+
+        $("#cm").on("click", function() {
+            var el = $('#m2');
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+                el.slideUp(200);
+            } else {
+                el.addClass('open');
+                el.slideDown(200);
+            }
+        })
+    })
+
+
+</script>

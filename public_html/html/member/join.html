@@ -1,0 +1,272 @@
+<div id="contet_area">
+    <h3 class="hide">컨텐츠 내용</h3>
+    <div class="path">
+        <ol class="path_list">
+            <li>회원서비스</li>
+            <li>회원가입</li>
+        </ol>
+    </div>
+
+    <h4 class="content_title">회원가입</h4>
+    <div class="content_body">
+        <ol class="agreement_list">
+            <li class="first"><img src="/html/images/common/join01_off.gif" alt="회원가입 3단계중 1단계 약관동의" /></li>
+            <li><img src="/html/images/common/join02_on.gif" alt="회원가입 3단계중 2단계 회원가입 현재페이지" /></li>
+            <li><img src="/html/images/common/join03_off.gif" alt="회원가입 3단계중 3단계 가입완료" /></li>
+        </ol>
+        <h5 class="box_title">
+            회원가입
+        </h5>
+
+        <form name="form1" method="POST" target="sysfrm" >
+            <div class="tb_box type_write">
+                <table summary="회원가입에 필요한 내용을 입력해주세요" class="join">
+                    <caption>회원가입 양식</caption>
+                    <colgroup>
+                        <col style="width: 14%" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+
+                    <tr>
+                        <th class="tb_th"><label for="login_id" class="join_required">아이디</label></th>
+                        <td>
+                            <input type="text" name="login_id" id="login_id" class="w200" maxlength="20" onblur="checkLoginId('{{login_id}}')"/>
+                            <span id="checkLoginIdArea" class="pl10">사용하실 아이디를 입력해주세요</span>
+                            <script>
+                                function checkLoginId(loginId) {
+                                    var f = document.forms['form1'];
+                                    var area = document.getElementById("checkLoginIdArea");
+                                    var value = f["login_id"].value;
+                                    if(value == "") { area.innerHTML = "사용하실 아이디를 입력해주세요.";
+                                        return; }
+
+                                    var pattern = /^[a-zA-Z]{1}[a-zA-Z0-9]{1,19}$/;
+                                    if(loginId == value) {
+                                        area.innerHTML = "영문으로 시작하는 2-20자 영문, 숫자 조합을 입력하세요.";
+                                        return;
+                                    }
+                                    if(!pattern.test(value)) {
+                                        area.innerHTML = "<span class=\"bad\">영문으로 시작하는 2-20자 영문, 숫자 조합을 입력하세요.</span>";
+                                        return;
+                                    } else {
+                                        area.innerHTML = "";
+                                        return;
+                                    }
+                                }
+                            </script>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="tb_th"><label for="passwd" class="join_required">비밀번호</label></th>
+                        <td>
+                            <input type="password" name="passwd" id="passwd" maxlength="50" class="w200" onblur="setPassword()" />
+                            <span id="checkPasswordArea" class="pl10">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>
+                            <script>
+                                function setPassword() {
+                                    var f = document.forms['form1'];
+                                    var area = document.getElementById("checkPasswordArea");
+                                    var passwd = f["passwd"].value;
+                                    var passwd2 = f["passwd2"].value;
+                                    if(passwd == "") { area.innerHTML = "영문, 숫자, 특수문자 조합 8자 이상 입력하세요.";
+                                        return; }
+
+                                    var pattern = /^(?=.*?[A-Za-z])(?=.*?[0-9])(?=.*?[\W_]).{8,}$/;
+                                    if(!pattern.test(passwd)) {
+                                        area.innerHTML = "<span class=\"bad\">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>"
+                                        return;
+                                    }
+                                    if(passwd && !passwd2) {
+                                        area.innerHTML = "비밀번호 확인란에 비밀번호를 입력하세요.";
+                                        return;
+                                    }
+                                    if(passwd != passwd2) {
+                                        area.innerHTML = "<span class=\"bad\">두 비밀번호가 일치하지 않습니다.</span>";
+                                        return;
+                                    }
+                                    area.innerHTML = "<span class=\"good\">두 비밀번호가 일치합니다.</span>";
+                                }
+                            </script>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="tb_th"><label for="passwd2" class="join_required">비밀번호 확인</label></th>
+                        <td><input type="password" name="passwd2" id="passwd2" maxlength="50" class="w200" onblur="setPassword()" /></td>
+                    </tr>
+
+                    <tr>
+                        <th class="tb_th"><label for="user_nm" class="join_required">이름</label></th>
+                        <td>
+                            <input type="text" name="user_nm" id="user_nm" pattern="[가-힣]+" maxlength="20" class="w200"  onblur="checkedNm('{{user_nm}}')" />
+                            <span id="checkedNmArea">이름을 입력해 주세요</span>
+                            <script>
+                                function checkedNm(userNm) {
+                                    var f = document.forms['form1'];
+                                    var area = document.getElementById("checkedNmArea");
+                                    var value = f["user_nm"].value;
+                                    if(value == "") { //공백이면
+                                        area.innerHTML = "이름을 입력해 주세요";
+                                        return;
+                                    }
+                                    var pattern = /^[ㄱ-ㅎ가-힣ㅏ-ㅣ]*$/;
+                                    if(userNm == value) {
+                                        area.innerHTML = "한글 이름을 입력해 주세요.";
+                                        return;
+                                    }
+                                    if(!pattern.test(value)) {
+                                        area.innerHTML = "<span class=\"bad\">한글 이름을 입력해 주세요.</span>";
+                                    } else {
+                                        area.innerHTML = "";
+                                    }
+                                }
+
+                            </script>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="tb_th"><label for="email1" class="join_required">이메일</label></th>
+                        <td>
+                            <div style="float:left;">
+                                <input type="text" name="email1" id="email1" class="w100" onblur="checkedEmail2('{{email1}}')"/> @
+                                <input type="text" name="email2" id="email2" class="w100"  onblur="checkedEmail2('{{email2}}')" />
+                                <select id="email3" onchange="document.forms['form1']['email2'].value = this.value;if(this.value) document.forms['form1']['email2'].focus();">
+                                    <option value=""> - 직접입력 - </option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                    <option value="dreamwiz.com">dreamwiz.com</option>
+                                    <option value="yahoo.co.kr">yahoo.co.kr</option>
+                                    <option value="empal.com">empal.com</option>
+                                    <option value="unitel.co.kr">unitel.co.kr</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="korea.com">korea.com</option>
+                                    <option value="chol.com">chol.com</option>
+                                    <option value="paran.com">paran.com</option>
+                                    <option value="freechal.com">freechal.com</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="hotmail.com">hotmail.com</option>
+                                </select>
+                                <span id="checkedEmailArea">이메일을 입력해 주세요</span>
+                                <script>
+                                    function checkedEmail2(email) {
+                                        var f = document.forms['form1'];
+                                        var area = document.getElementById("checkedEmailArea");
+                                        var value = f["email1"].value +"@"+ f["email2"].value;
+                                        var email1 = f["email1"].value;
+                                        var email2 = f["email2"].value;
+
+                                        // var value2 = f["email2"].value;
+                                        if(value == "") { //공백이면
+                                            area.innerHTML = "이메일을 입력해주세요";
+                                            return;
+                                        }
+                                        var pattern = /^[a-z0-9A-Z\_\.\-]+@([a-z0-9A-Z\.\-]+)\.([a-zA-Z]+)$/;
+                                        var pattern2 = /^[a-zA-Z0-9]+$/; //숫자, 알파벳만 가능
+                                        var pattern3 = /[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+                                        // if(email1 == value) {
+                                        //     area.innerHTML = "이메일 형식이 맞지 않습니다.";
+                                        //     return;
+                                        // }
+                                        if(!pattern2.test(email1)) {
+                                            area.innerHTML = "<span class=\"bad\">이메일 형식이 맞지 않습니다.</span>"
+                                        } else {
+                                            area.innerHTML = "";
+                                        }
+
+                                        if(!pattern3.test(email2)) {
+                                            area.innerHTML = "<span class=\"bad\">이메일 형식이 맞지 않습니다.</span>"
+                                        } else {
+                                            area.innerHTML = "";
+                                        }
+
+                                        if(!pattern.test(value)) {
+                                            area.innerHTML = "<span class=\"bad\">이메일 형식이 맞지 않습니다.</span>";
+                                        } else {
+                                            area.innerHTML = "";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                        </td>
+                    </tr>
+
+
+
+                    <tr>
+                        <th class="tb_th"><label for="mobile1" class="join_required">휴대전화번호</label></th>
+                       <td>
+                            <select name="mobile1">
+                                <option value=""> - 선택 - </option>
+                                <option value="010"> 010 </option>
+                                <option value="011"> 011 </option>
+                                <option value="016"> 016 </option>
+                                <option value="017"> 017 </option>
+                                <option value="018"> 018 </option>
+                                <option value="019"> 019 </option>
+                            </select>
+                            - <input type="text" name="mobile2" maxlength="4" class="w40" onblur="checkedMobile()" /> -
+                           <input type="text" name="mobile3" maxlength="4" class="w40" onblur="checkedMobile()" /> &nbsp;
+                            <span class="pl10"></span>
+                           <span id="checkedMobileArea">휴대전화번호를 입력해 주세요</span>
+
+                           <script>
+                               function checkedMobile() {
+                                   var f = document.forms['form1'];
+                                   var area = document.getElementById("checkedMobileArea");
+                                   var mobile2 = f["mobile2"].value;
+                                   var mobile3 = f["mobile3"].value;
+
+                                  if(mobile2 == "" || mobile3 == "") { //공백이면
+                                       area.innerHTML = "휴대전화번호를 입력해 주세요";
+                                       return;
+                                   }
+                                   var pattern = /^[0-9]+$/; //숫자만 가능
+
+                                   if(pattern.test(mobile2) && pattern.test(mobile3) ) {
+                                       area.innerHTML = "";
+                                   } else {
+                                       area.innerHTML = "<span class=\"bad\">휴대전화번호 형식이 맞지 않습니다.</span>"
+                                   }
+                               }
+                           </script>
+
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th class="tb_th"><label for="email_yn" class="join_required">이메일 수신</label></th>
+                        <td>
+                            <label><input type="radio" name="email_yn" value="Y" /> 수신동의</label> &nbsp;
+                            <label><input type="radio" name="email_yn" value="N" /> 수신거부</label>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <th class="tb_th"><label for="sms_yn" class="join_required">SMS 수신</label></th>
+                        <td>
+                            <label><input type="radio" name="sms_yn" value="Y" /> 수신동의</label> &nbsp;
+                            <label><input type="radio" name="sms_yn" value="N" /> 수신거부</label>&nbsp;
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div style="position:relative" id="buttonArea">
+                <div id="prog" style="display:none;width:100%;height:100px;position:absolute;background:#FFFFFF;text-align:center;">
+                    처리 중입니다. 잠시만 기다려주세요.
+                </div>
+                <div class="board btn">
+                    <input type="submit" class="button red" id="btn_submit" value="확인" />
+                    <input type="button" class="button white" onclick="location.href = '/main/index.jsp'" value="취소" />
+                </div>
+            </div>
+        </form>
+    {{form_script}}
+
+    </div>
+</div>

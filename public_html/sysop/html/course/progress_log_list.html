@@ -1,0 +1,58 @@
+<input type="hidden" name="ord" value="">
+<input type="hidden" name="mode" value="">
+<input type="hidden" name="uid" value="{{uid}}">
+<table class="c_tb01">
+    <tr>
+        <td class="c_th01">진도로그</td>
+    </tr>
+</table>
+
+<table class="a_tb01">
+    <tr>
+        <td class="a_th01">{{list_total}}</td>
+        <td class="a_td01"></td>
+    </tr>
+</table>
+
+<form name="form2" method="post">
+<table class="l_tb01">
+    <col style="width:40px;">
+    <col>
+    <col style="width:150px;">
+    <col style="width:140px;">
+    <thead>
+    <tr>
+        <td class="l_th03">No</td>
+        <td class="l_th03">강의명</td>
+        <td class="l_th03">접속IP</td>
+        <td class="l_th03">접속일시</td>
+    </tr>
+    </thead>
+    <tbody>
+    <!--@loop(list)-->
+    <tr>
+        <td class="l_td01">{{list.__ord}}</td>
+        <td class="l_td01 ltd">{{list.lesson_nm}}</a></td>
+        <td class="l_td01">{{list.ip_addr}}</td>
+        <td class="l_td01">{{list.reg_date}}</td>
+    </tr>
+    <!--/loop(list)-->
+    </tbody>
+</table>
+
+<!--@nif(list)-->
+<table class="n_tb01">
+    <tr>
+        <td class="n_td01">해당 자료가 없습니다.</td>
+    </tr>
+</table>
+<!--/nif(list)-->
+
+<table class="p_tb01">
+    <tr>
+        <td class="p_td01">{{pagebar}}</td>
+    </tr>
+</table>
+
+<script>ListSort(null, "{{ord}}");</script>
+</form>

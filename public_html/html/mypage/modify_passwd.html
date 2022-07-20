@@ -1,0 +1,95 @@
+<div id="contet_area">
+    <h3 class="hide">컨텐츠 내용</h3>
+    <div class="path">
+        <ol class="path_list">
+            <li>마이페이지</li>
+            <li>비밀번호 변경</li>
+        </ol>
+    </div>
+    <h4 class="content_title">비밀번호 변경</h4>
+    <div class="content_body">
+        <style type="text/css">
+            .tab_title {width:calc( 50% - 2px ) !important;}
+            .tab_tt li.on a {width:100% !important;}
+        </style>
+        <div class="tab_wrap2">
+            <ul class="tab_tt">
+                <li class="tab_title" id="modify_info"><a href="../mypage/modify_verify.jsp">개인정보수정</a></li>
+                <li class="tab_title on" id="modify_passwd"><a href="../mypage/modify_passwd.jsp">비밀번호변경</a></li>
+            </ul>
+        </div>
+
+        <div class="tb_top">
+        </div>
+
+
+        <form name="form1" method="post" target="sysfrm" onsubmit="return goSubmit(this);">
+            <input type="hidden" name="returl" value="{{returl}}" >
+            <div class="tb_box type_write">
+
+                <table class="join nobg">
+                    <caption>비밀번호 변경 양식</caption>
+                    <colgroup>
+                        <col style="width: 14%" />
+                        <col />
+                    </colgroup>
+                    <tbody>
+                    <tr>
+                        <th class="tb_th"><label for="passwd_old">기존 비밀번호</label></th>
+                        <td><input type="password" name="passwd_old" id="passwd_old" class="w200" /> </td>
+                    </tr>
+                    <tr>
+                        <th class="tb_th" ><label for="passwd">신규 비밀번호</label></th>
+                        <td>
+                            <input type="password" name="passwd" id="passwd" class="w200" onblur="setPassword()" />
+                            <span id="checkPasswordArea" class="pl10">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>
+                    <tr>
+                        <th class="tb_th"><label for="passwd2">비밀번호 확인</label></th>
+                        <td>
+                            <input type="password" name="passwd2" id="passwd2" class="w200" onblur="setPassword2()">
+                            <span id="checkPasswordArea2" class="pl10"></span>
+                        </td>
+                    </tr>
+                            <script>
+                                function setPassword() {
+                                    var f = document.forms['form1'];
+                                    var area = document.getElementById("checkPasswordArea");
+                                    var passwd = f["passwd"].value;
+                                    var passwd2 = f["passwd2"].value;
+                                    if(passwd == "") { area.innerHTML = "영문, 숫자, 특수문자 조합 8자 이상 입력하세요.";
+                                        return; }
+                                    var pattern = /^(?=.*?[a-zA-Z])(?=.*?[0-9])(?=.*?[\W_]).{8,}$/;
+
+                                    if(!pattern.test(passwd)) {
+                                        area.innerHTML = "<span class=\"bad\">영문, 숫자, 특수문자 조합 8자 이상 입력하세요.</span>";
+                                        return;
+                                    }
+                                    area.innerHTML = "";
+                                }
+
+                                function setPassword2(){
+                                    var f = document.forms['form1'];
+                                    var area = document.getElementById("checkPasswordArea2");
+                                    var passwd = f["passwd"].value;
+                                    var passwd2 = f["passwd2"].value;
+
+                                    if (passwd != passwd2) {
+                                        area.innerHTML = "<span class=\"bad\">두 비밀번호가 일치하지 않습니다.</span>";
+                                        return;
+                                    }
+                                    area.innerHTML = "";
+                                }
+                            </script>
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="board btn">
+                <input type="submit" class="button red" value="수정하기" />
+            </div>
+        </form>
+        {{form_script}}
+    </div>
+</div>

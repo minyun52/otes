@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{SYS_TITLE}}</title>
+    <link rel="stylesheet" type="text/css" href="/sysop/html/css/admin.css" />
+    <link rel="stylesheet" type="text/css" href="/common/css/fontawesome5/css/all.min.css">
+    <script language="javascript" type="text/javascript" src="/common/js/jquery-1.12.3.min.js" charset="utf-8"></script>
+    <script language="javascript" type="text/javascript" src="/common/js/common.js"></script>
+
+</head>
+<body>
+
+<div class="pop_wrap">
+    <div class="pop_title">
+        <span>{{p_title}}</span>
+    </div>
+    <div class="pop_content">
+        <!--@include(BODY)-->
+    </div>
+</div>
+
+<div style="display:none;">
+<iframe name="sysfrmblank" id="sysfrmblank" frameborder="0" width="0" height="0" src=""></iframe>
+</div>
+
+
+</body>
+</html>
+
+<script>
+function setLabel() {
+var progresses = {"운영자" : "blue", "최고관리자" : "red", "회원" : "sky", "미수료" : "red", "수료" : "blue", "미판정" : "sky"};
+$(".label").each(function() {
+var v = $(this).html();
+$(this).attr("class", "label " + progresses[v]);
+});
+}
+</script>

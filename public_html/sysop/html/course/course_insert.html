@@ -1,0 +1,122 @@
+<!--@if(modify)-->
+<!--@include(/course/course_tab.html)-->
+<!--/if(modify)-->
+
+<form name="form1" method="post" target="sysfrm" enctype="multipart/form-data">
+<input type="hidden" name="onoff_type">
+<input type="hidden" name="course_type">
+
+<table class="c_tb01">
+<tr>
+    <td class="c_th01">기초 정보</td>
+    <td class="c_td01"></td>
+</tr>
+</table>
+
+<table class="f_tb01">
+    <colgroup>
+        <col style="width:150px;">
+        <col style="width:auto;">
+        <col style="width:150px;">
+        <col style="width:auto;">
+    </colgroup>
+    <tr>
+        <td class="f_th01">과정 구분 *</td>
+        <td class="f_td01" colspan="3">
+            <!--@nif(modify)-->
+            <label style="display:block; height:20px;">
+                <input type="radio" name="type" value="N|A" class="ipt01" onclick="setOnoffType(this.value)" checked="checked"> 온라인 상시과정
+                <span class="desc01"> 온라인에서 상시로 수강 가능한 과정입니다.</span>
+            </label>
+            <!--/nif(modify)-->
+            <!--@if(modify)-->
+            온라인 상시과정 <span class="desc01"> 수시로 수강신청 가능한 온라인 과정입니다.</span>
+            <!--/if(modify)-->
+        </td>
+    </tr>
+    <tr>
+        <td class="f_th01">과정 개설명 *</td>
+        <td class="f_td01" colspan="3"><input type="text" name="course_nm" size="70" style="font-weight:bold; color:#4C5BA9"></td>
+    </tr>
+    <tr>
+        <td class="f_th01">메인 이미지 *</td>
+        <td class="f_td01" colspan="3">
+            <!--@if(course_file)-->
+            <p style="padding-bottom:5px;">파일 : <a href="../main/download_file.jsp?file={{course_file_conv}}&ek={{course_file_ek}}" class="file01 image01" del="course_modify.jsp?mode=fdel&{{query}}" isrc="{{course_file_url}}">{{course_file}}</a></p>
+            <!--/if(course_file)-->
+            <input type="file" name="course_file" size="70" style="border:1px solid #d1d1d1;">
+            <span class="desc01">이미지의 크기는 370×247px을 권장합니다. 업로드파일은 gif,png,jpg 파일만 가능합니다.</span>
+        </td>
+    </tr>
+    <tr id="row_lesson">
+        <td class="f_th01">학습일수 *</td>
+        <td class="f_td01" colspan="3">
+            <input type="text" name="lesson_day" maxlength="3" size="4" > 일
+            <span class="desc01">온라인 상시과정 수강신청시에 자동으로 등록되는 학습 일수입니다.</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="f_th01">수강료</td>
+        <td class="f_td01" colspan="3">
+            무료
+        </td>
+    </tr>
+
+    <table class="c_tb01" style="margin-top:10px">
+        <tr>
+            <td class="c_th01">상세 정보</td>
+            <td class="c_td01"></td>
+        </tr>
+    </table>
+
+
+    <table class="f_tb01">
+        <colgroup>
+            <col style="width:150px;">
+            <col style="width:auto;">
+            <col style="width:150px;">
+            <col style="width:auto;">
+        </colgroup>
+        <tr>
+            <td class="f_th01">과정 소개</td>
+            <td class="f_td01" colspan="3">
+                <textarea name="description" class="NoEditor" style="width:100%;height:100px;" >{{description}}</textarea>
+            </td>
+        </tr>
+        <!--@if(modify)-->
+        <tr>
+            <td class="f_th01">추천과정</td>
+            <td class="f_td01" colspan="3">
+                <label class="switch01"><input type="checkbox" name="recomm_yn" value="Y"></label>
+                <span class="desc01">해당 과정을 추천과정으로 지정합니다.</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="f_th01">수료 기준</td>
+            <td class="f_td01" colspan="3">
+                <input type="text" name="limit_progress" value="{{limit_progress}}" maxlength="3" size="3"> % 이상 / <span class="fontsmall">100%</span>
+            </td>
+        </tr>
+        <!--/if(modify)-->
+    </table>
+</table>
+
+<table class="b_tb01">
+<tr>
+    <td>
+        <button type="button" class="bttn2" onclick="location.href='course_list.jsp?{{list_query}}';">목록</button>
+    </td>
+    <td class="b_td01">
+        <!--@nif(modify)-->
+        <button type="submit" class="bttn2">등록</button>
+        <!--/nif(modify)-->
+        <!--@if(modify)-->
+        <button type="submit" class="bttn2">수정</button>
+        <button type="button" class="bttn2" onclick="BtnConfirmGo('삭제', 'course_delete.jsp?{{query}}');">삭제</button>
+        <!--/if(modify)-->
+    </td>
+</tr>
+</table>
+
+</form>
+{{form_script}}

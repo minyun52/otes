@@ -1,0 +1,127 @@
+<div id="contet_area">
+    <h3 class="hide">컨텐츠 내용</h3>
+    <div class="path">
+        <ol class="path_list">
+            <li>마이페이지</li>
+            <li>수강현황</li>
+        </ol>
+    </div>
+    <h4 class="content_title">수강현황</h4>
+    <div class="content_body">
+        <div class="tab_wrap">
+            <div class="tb_top tb_top_large">
+                <div class="course_tab">
+                    <ul class="tab_tt tab_tt1">
+                        <li class="tab_title on"><a href="#self">수강 중인 과정</a></li>
+                        <li class="tab_title "><a href="#self">종료된 과정</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab_con_wrap">
+                <div class="tab_con">
+                    <div class="tb_box type_list course_user_list" >
+                        <table summary="수강 중인 과정및  기간  진도율을 나타냅니다.">
+                            <caption>수강 중인과정</caption>
+                            <colgroup>
+                                <col style="width: 7%" />
+                                <col />
+                                <col style="width: 27%" />
+                                <col style="width: 8%" />
+                                <col style="width: 13%" />
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">과정명</th>
+                                <th scope="col">학습기간</th>
+                                <th scope="col">진도율</th>
+                                <th scope="col">강의실</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--@loop(list1)-->
+                            <tr>
+                                <td class="tac"><span class="label small w30">상시</span></td>
+                                <td class="tal">
+                                    <p class="subject">
+                                        {{list1.course_nm}}
+                                    </p>
+                                </td>
+                                <td class="tac">
+                                    {{list1.start_date_conv}} - {{list1.end_date_conv}}
+                                </td>
+                                <td align="right">{{list1.progress_ratio}}%</td>
+                                <td class="tac">
+                                    <a href="#" class="button small blue" onclick="checkStudyStatus('{{list1.study_status}}', '{{list1.id}}')">강의실 입장</a>
+                                </td>
+                                <script>
+                                    function checkStudyStatus(studyStatus, cuid) {
+                                        if(0 > studyStatus) {
+                                            alert('학습 시작일부터 학습이 가능합니다.');
+                                            return;
+                                        } else {
+                                            window.location.href = '../classroom/index.jsp?cuid=' + cuid;
+                                        }
+                                    }
+                                </script>
+                            </tr>
+                            <!--/loop(list1)-->
+
+                            <!--@nif(list1)-->
+                            <tr>
+                                <td class="nodata" colspan="5">수강 중인 과정이 없습니다.</td>
+                            </tr>
+                            <!--/nif(list1)-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab_con">
+                    <div class="tb_box type_list course_user_close_list" >
+                        <table summary="종료된 과정 및 수료여부등을 나타냅니다.">
+                            <caption>종료된 과정</caption>
+                            <colgroup>
+                                <col style="width: 7%" />
+                                <col />
+                                <col style="width: 27%" />
+                                <col style="width: 8%" />
+                                <col style="width: 13%" />
+                            </colgroup>
+                            <thead>
+                            <tr>
+                                <th scope="col">구분</th>
+                                <th scope="col">과정명</th>
+                                <th scope="col">학습기간</th>
+                                <th scope="col">진도율</th>
+                                <th scope="col">수료여부</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--@loop(list2)-->
+                            <tr>
+                                <td class="tac"><span class="label small w30">상시</span></td>
+                                <td class="tal">
+                                    <p class="subject">
+                                        {{list2.course_nm}}
+                                    </p>
+                                </td>
+                                <td class="tac">{{list2.start_date_conv}} - {{list2.end_date_conv}}</td>
+                                <td align="right">{{list2.progress_ratio}}%</td>
+                                <!--@nif(list2.complete_status)--><td class="tac">{{list2.status_conv}}</td><!--/nif(list2.complete_status)-->
+                                <!--@if(list2.complete_status)--><td class="tac"><input type="button" class="button small gray" value="수료증" onclick="OpenWindow('certificate.jsp?cunm={{SYS_USERNAME}}&cid={{list2.course_id}}&start_date={{list2.start_date}}&end_date={{list2.end_date}}', '_CC01', '650', '900')"></td><!--/if(list2.complete_status)-->
+                            </tr>
+                            <!--/loop(list2)-->
+                            <!--@nif(list2)-->
+                            <tr>
+                                <td class="nodata" colspan="5">종료된 과정이 없습니다.</td>
+                            </tr>
+                            <!--/nif(list2)-->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,85 @@
+<form name="form1" method="post">
+<input type="hidden"  value="{{lesson_id}}">
+<table class="c_tb01">
+<tr>
+    <td class="c_th01"><!--@nif(modify)--> 등록<!--/nif(modify)--><!--@if(modify)--> 수정<!--/if(modify)--></td>
+    <td class="c_td01"></td>
+</tr>
+</table>
+
+<table class="f_tb01">
+<colgroup>
+    <col style="width: 120px;">
+    <col style="width: auto;">
+    <col style="width: 120px;">
+    <col style="width: auto;">
+</colgroup>
+<tr>
+    <td class="f_th01">강의명 *</td>
+    <td class="f_td01" colspan="3"><input type="text" maxlength="255" name="lesson_nm" size="120"></td>
+</tr>
+<tr>
+    <td class="f_th01">콘텐츠주소(URL) *</td>
+    <td class="f_td01" colspan="3">
+        <table class="l_tb01" width="100%">
+            <colgroup>
+                <col style="width: 50px;">
+                <col style="width: 65px;">
+                <col style="width: auto;">
+            </colgroup>
+            <tr>
+                <td class="l_td01">PC</td>
+                <td class="l_td01" colspan="5">
+                    <input type="text" name="lesson_url" size="110" value="{{lesson_url}}">
+                </td>
+            </tr>
+            <tr>
+                <td class="l_td01" rowspan="2">Mobile</td>
+                <td class="l_td01" colspan="5">
+                    <input type="text" name="lesson_url_mobile" size="110" value="{{lesson_mobile_url}}">
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">학습시간</td>
+    <td class="f_td01" colspan="3">
+        <input type="text" name="total_time" size="5" style="text-align:center"> 분
+        <span class="desc01"> 실제 플레이 시간을 입력합니다. </span>
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">인정시간</td>
+    <td class="f_td01" colspan="3">
+        <input type="text" name="complete_time" size="5" style="text-align:center"> 분
+        <span class="desc01"> 진도율이 100%가 되는 최소 학습시간입니다. 0 입력시 해당 콘텐츠 조회만으로 진도율을 100%로 인정됩니다.</span>
+    </td>
+</tr>
+<tr>
+    <td class="f_th01">설명</td>
+    <td class="f_td01" colspan="3">
+        <textarea name="description" style="width:100%; height:130px;">{{description}}</textarea>
+    </td>
+</tr>
+</table>
+
+
+<table class="b_tb01" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+            <button type="button" class="bttn2" onclick="window.close();">닫기</button>
+        </td>
+        <td class="b_td01">
+            <!--@nif(modify)-->
+            <button type="submit" class="bttn2">등록</button>
+            <!--/nif(modify)-->
+            <!--@if(modify)-->
+            <button type="submit" class="bttn2">수정</button>
+            <button type="button" class="bttn2" onclick="BtnConfirmGo('삭제', 'lesson_delete.jsp?{{query}}');">삭제</button>
+            <!--/if(modify)-->
+        </td>
+    </tr>
+</table>
+</form>
+{{form_script}}

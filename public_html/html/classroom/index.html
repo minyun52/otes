@@ -1,0 +1,79 @@
+<div id="contet_area">
+    <div class="path">
+        <ol class="path_list">
+            <li>강의실</li>
+            <li>메인</li>
+        </ol>
+    </div>
+    <div class="content_body">
+        <div class="my_cr_bbs">
+        <h5 class="tb_title">강의목차</h5>
+        <div class="tb_box tb_list tb_list_resp">
+            <table summary="현과정의 목차를 알수 있습니다.">
+                <caption>강의목차</caption>
+                <colgroup>
+                    <col style="width: 10px">
+                    <col style="width: 10px">
+                    <col style="width: 60px">
+                    <col style="width: 20px">
+                    <col style="width: 10px">
+                </colgroup>
+
+                <thead>
+                <tr>
+                    <th scope="col" class="col_lesson_idx">차시</th>
+                    <th scope="col" class="col_lesson_status">학습여부</th>
+                    <th scope="col" class="col_lesson_nm">강의명</th>
+                    <th scope="col" class="col_lesson_period">학습시간</th>
+                    <th scope="col" class="col_lesson_play">학습하기</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!--@loop(list)-->
+                <tr>
+                    <td class="col_lesson_idx">{{list.__ord}}</td>
+                    <td class="col_lesson_status">
+                        <div>
+
+                            <!--@if(list.complete_yn:Y)--><span class="lesson_complete">완료</span><!--/if(list.complete_yn:Y)-->
+
+                            <!--@nif(list.complete_yn:Y)--><span class="lesson_proceeding">학습중</span><!--/nif(list.complete_yn:Y)-->
+
+                        </div>
+                    </td>
+                    <td class="col_lesson_nm" title="{{list.lesson_nm}}">
+                        {{list.lesson_nm}}
+                    </td>
+                    <td class="col_lesson_period study_period">
+
+                        <span class="font12">{{list.study_time_conv}}/{{list.total_time_conv}}</span>
+                    </td>
+                    <td class="col_lesson_play">
+                        <button type="button" onclick="openViewer('{{cuid}}', '{{list.id}}');" class="button small blue btn_study">학습하기</button>
+                    </td>
+                </tr>
+                <!--/loop(list)-->
+                
+                </tbody>
+            </table>
+            <!--@nif(list)-->
+            <p class="nodata" colspan="5">등록된 강의목차가 없습니다.</p>
+            <!--/nif(list)-->
+        </div>
+    </div>
+</div>
+<script>
+    var viewerTimerId = 0;
+    var viewer = null;
+    var clicked = false;
+
+    function openViewer(cuid, lid) {
+        if(!clicked) {
+            clicked = true;
+            viewer = OpenWindowr('viewer.jsp?cuid=' + cuid + '&lid=' + lid, 'VIEWER', 1200, 800);
+            setTimeout(function() { clicked = false; }, 5000);
+            if(viewer) viewerTimerId = setInterval(isOpened, 1000);
+        }
+    }
+</script>
+</div>

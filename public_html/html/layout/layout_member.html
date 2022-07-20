@@ -1,0 +1,33 @@
+<!--@include(layout/header.html)-->
+<body>
+	<div class="skip_nav">
+		<a href="#gnb">메인메뉴로 이동</a>
+		<a href="#container">본문으로 이동</a>
+	</div>
+	<div id="wrap">
+		<!--@include(layout/top.html)-->
+		<div class="sub_top sub_top2" style="background-image:url('/common/images/sub2.jpg');">
+			<h1>회원서비스</h1>
+			<span class="overlay-top-header"></span>
+		</div>
+		<div id="container">
+			<div class="main_wrap">
+				<p class="sub_top" ><img src="/common/images_skin2/common/sub6.jpg" alt="" /></p>
+				<div class="left_area lnb01">
+					<h3 class="hide">lnb영역</h3>
+					<h3 class="lnb_title">회원서비스</h3>
+					<ul class="lnb_list">
+						<li id="login"><a href="/member/login.jsp" title="로그인" target="_self">로그인</a></li>
+						<li id="join"><a href="/member/agreement.jsp" title="회원가입" target="_self">회원가입</a></li>
+					</ul>
+				</div>
+				<div class="content_area">
+<!--@include(BODY)-->
+				</div>
+				<iframe src="" name="sysfrm" id="sysfrm" width="100%" height="0" scrolling="no" frameborder="0"></iframe>
+			</div>
+		</div>
+		<!--@include(layout/footer.html)-->
+	</div>
+</body>
+</html>

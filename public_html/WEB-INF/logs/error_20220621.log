@@ -1,0 +1,390 @@
+[2022-06-21 08:52:45] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:53:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:53:39] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:53:55] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:54:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:54:27] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 08:54:27] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 08:54:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:26] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:27] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:57] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:57] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:55:58] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:56:18] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:56:20] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:57:17] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:58:41] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 08:58:41] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 08:58:44] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 08:58:53] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:20:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:20:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:20:35] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:20:37] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:21:00] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:21:00] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 09:21:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:17:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:42:16] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:42:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:42:23] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:42:25] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 11:42:47] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:54:38] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:54:55] at /sysop/content/lesson_0modify.jsp
+{DB.execute} UPDATE LM_LESSON SET lesson_nm=?,lesson_url_mobile=?,description=?,total_time=?,complete_time=?,lesson_url=? WHERE id = 84 => Data truncation: Data too long for column 'LESSON_NM' at row 1
+{lesson_nm=정보보안개론fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, lesson_url_mobile=, description=, total_time=0, complete_time=0, lesson_url=} (Data truncation: Data too long for column 'LESSON_NM' at row 1)
+[2022-06-21 13:57:12] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:57:31] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:57:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:57:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:57:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:41] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:42] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:44] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 13:58:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:08] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:11] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:12] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:13] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:13] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:15] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:23] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:23] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:22:24] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:23:03] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:27:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:28:15] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:28:17] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:28:20] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:29:40] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:29:46] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:30:00] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:30:05] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:32:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:34:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:34:15] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:34:18] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:34:44] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:03] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:04] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:05] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:06] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:06] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:06] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:06] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:29] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:30] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:30] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:30] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:31] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:31] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:31] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:35:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:20] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:26] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 15:36:26] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 15:36:27] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:29] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:38] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:39] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:39] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:53] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 15:36:53] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 15:36:54] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:55] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:55] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:36:57] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:49] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:50] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:51] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:51] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:51] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:51] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:52] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:37:53] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:38:11] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:40:27] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:40:38] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:41:05] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:42:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:46:02] at /member/join.jsp
+{DB.execute} INSERT INTO TB_USER (mobile,passwd,conn_date,user_type,login_id,email_yn,email_date,agreement_yn,status,sms_yn,sms_date,email,user_nm,agreement_date,reg_date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) => Duplicate entry 'kaya1234' for key 'LOGIN_ID'
+{mobile=011-3333-1111, passwd=6da4b98bfb06b104ff34b6e0806df208f78a16cec2a001c0964be9fc4c18c42b, conn_date=20220621154602, user_type=U, login_id=kaya1234, email_yn=N, email_date=20220621, agreement_yn=Y, status=1, sms_yn=N, sms_date=20220621, email=kaya@nate.com, user_nm=정가영, agreement_date=20220621154602, reg_date=20220621154602} (Duplicate entry 'kaya1234' for key 'LOGIN_ID')
+[2022-06-21 15:46:04] at /member/join.jsp
+{DB.execute} INSERT INTO TB_USER (mobile,passwd,conn_date,user_type,login_id,email_yn,email_date,agreement_yn,status,sms_yn,sms_date,email,user_nm,agreement_date,reg_date) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) => Duplicate entry 'kaya1234' for key 'LOGIN_ID'
+{mobile=011-3333-1111, passwd=6da4b98bfb06b104ff34b6e0806df208f78a16cec2a001c0964be9fc4c18c42b, conn_date=20220621154604, user_type=U, login_id=kaya1234, email_yn=N, email_date=20220621, agreement_yn=Y, status=1, sms_yn=N, sms_date=20220621, email=kaya@nate.com, user_nm=정가영, agreement_date=20220621154604, reg_date=20220621154604} (Duplicate entry 'kaya1234' for key 'LOGIN_ID')
+[2022-06-21 15:48:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:49:08] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:49:16] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:49:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:50:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:50:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:54:00] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 15:57:53] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:14:22] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:16:27] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:22:40] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:22:56] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 16:22:56] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 16:22:58] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:23:12] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:23:28] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:24:13] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:24:27] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:24:29] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:25:05] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 16:25:05] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 16:25:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:26:17] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:26:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:26:22] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:26:52] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:27:02] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:27:03] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:27:04] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:27:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:28:05] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:28:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:28:28] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:28:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:28:50] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:30:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:32:47] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:32:53] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:33:46] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:34:55] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:34:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:37:49] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163749, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:37:56] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163756, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:00] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:38:01] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:38:02] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:38:06] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163806, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:09] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163809, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:11] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163811, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:38:38] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163838, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:41] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163841, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:38:52] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621163852, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:52:32] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:52:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:52:36] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621165236, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:52:40] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621165240, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:52:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:52:50] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621165250, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:56:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:57:31] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:57:56] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:58:05] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:58:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 16:59:45] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621165945, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:59:50] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621165950, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 16:59:52] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:00:32] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621170032, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:01:19] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:02:26] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:02:29] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621170229, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:02:34] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:02:36] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:03:38] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:03:39] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:11] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:11] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:04:11] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:05:13] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:05:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:05:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:05:14] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:06:49] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621170649, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:06:53] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:08:24] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:08:27] at /classroom/viewer.jsp
+{DB.execute} INSERT INTO LM_COURSE_PROGRESS (complete_date,complete_yn,study_time,reg_date) VALUES (?,?,?,?) => Field 'COURSE_USER_ID' doesn't have a default value
+{complete_date=20220621170827, complete_yn=Y, study_time=0, reg_date=20220621170827} (Field 'COURSE_USER_ID' doesn't have a default value)
+[2022-06-21 17:08:33] at /classroom/viewer.jsp
+{DB.execute} INSERT INTO LM_COURSE_PROGRESS (complete_date,complete_yn,study_time,reg_date) VALUES (?,?,?,?) => Field 'COURSE_USER_ID' doesn't have a default value
+{complete_date=20220621170833, complete_yn=Y, study_time=0, reg_date=20220621170833} (Field 'COURSE_USER_ID' doesn't have a default value)
+[2022-06-21 17:08:38] at /classroom/viewer.jsp
+{DB.execute} INSERT INTO LM_COURSE_PROGRESS (complete_date,complete_yn,study_time,reg_date) VALUES (?,?,?,?) => Field 'COURSE_USER_ID' doesn't have a default value
+{complete_date=20220621170838, complete_yn=Y, study_time=0, reg_date=20220621170838} (Field 'COURSE_USER_ID' doesn't have a default value)
+[2022-06-21 17:08:42] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:08:45] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:08:48] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:08:50] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:09:38] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:09:40] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:09:43] at /classroom/viewer.jsp
+{DB.execute} INSERT INTO LM_COURSE_PROGRESS (complete_date,complete_yn,study_time,reg_date) VALUES (?,?,?,?) => Field 'COURSE_USER_ID' doesn't have a default value
+{complete_date=20220621170943, complete_yn=Y, study_time=0, reg_date=20220621170943} (Field 'COURSE_USER_ID' doesn't have a default value)
+[2022-06-21 17:09:46] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:11:22] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171122, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:11:29] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:11:41] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171141, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:11:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:12:46] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171246, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:12:49] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:13:44] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171344, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:13:48] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171348, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:13:50] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:15:19] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621171519, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:15:22] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:22:54] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:22:57] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621172257, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:23:00] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET complete_date=?,complete_yn=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{complete_date=20220621172300, complete_yn=Y} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:32:07] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:32:09] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:32:12] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET course_user_id=?,lesson_id=?,complete_date=?,complete_yn=?,last_time=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{course_user_id=200, lesson_id=72, complete_date=20220621173212, complete_yn=Y, last_time=0} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:32:14] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET course_user_id=?,lesson_id=?,complete_date=?,complete_yn=?,last_time=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{course_user_id=200, lesson_id=84, complete_date=20220621173214, complete_yn=Y, last_time=0} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:32:16] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET course_user_id=?,lesson_id=?,complete_date=?,complete_yn=?,last_time=? WHERE course_user_id = 200 AND lesson_id = 72 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{course_user_id=200, lesson_id=72, complete_date=20220621173216, complete_yn=Y, last_time=0} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:32:19] at /classroom/viewer.jsp
+{DB.execute} UPDATE LM_COURSE_PROGRESS SET course_user_id=?,lesson_id=?,complete_date=?,complete_yn=?,last_time=? WHERE course_user_id = 200 AND lesson_id = 84 => Data truncation: Data too long for column 'COMPLETE_DATE' at row 1
+{course_user_id=200, lesson_id=84, complete_date=20220621173219, complete_yn=Y, last_time=0} (Data truncation: Data too long for column 'COMPLETE_DATE' at row 1)
+[2022-06-21 17:32:44] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:35:20] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:36:21] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:36:45] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:36:46] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:36:50] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:37:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:37:43] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:37:48] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:38:22] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:39:13] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:39:30] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:39:33] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:40:01] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE  id = 25 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:05] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE  id = 22 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:18] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:40:19] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 22 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:28] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 4 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:34] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 4 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:37] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 8 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:38] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 10 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:40:40] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 12 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:41:10] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE id = 1 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:41:10] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:42:01] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE  id = 25 AND a.status = 1  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:42:22] at /course/course_0view.jsp
+{DB.query} SELECT * FROM LM_COURSE WHERE  id = 25 AND a.status = '1'  => Unknown column 'a.status' in 'where clause' (Unknown column 'a.status' in 'where clause')
+[2022-06-21 17:45:59] at /course/course_0view.jsp
+{DB.query} SELECT lesson_nm, description, sort FROM LM_LESSON WHERE  status = '1' AND course_id = 25 ORDER BY ASC => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC' at line 1)
+[2022-06-21 17:46:08] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:46:12] at /course/course_0view.jsp
+{DB.query} SELECT lesson_nm, description, sort FROM LM_LESSON WHERE  status = '1' AND course_id = 1 ORDER BY ASC => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC' at line 1 (You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ASC' at line 1)
+[2022-06-21 17:52:46] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:53:28] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:53:42] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:54:49] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:54:54] at /mypage/courseuser_0insert.jsp
+{Malgn.strToDate(1)} source: (source is blank or null)
+[2022-06-21 17:54:54] at /mypage/courseuser_0insert.jsp
+{Malgn.diffDate} type:D, sdate:, edate:20220621 (date is blank or null)
+[2022-06-21 17:54:55] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:55:18] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:55:22] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:55:45] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html
+[2022-06-21 17:55:49] {Template.readFile} path:/home/otes/public_html/html/layout/left_banner.html

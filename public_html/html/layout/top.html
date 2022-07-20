@@ -1,0 +1,31 @@
+		<div id="header">
+			<div class="util_wrap">
+				<h2 class="hide">유틸 메뉴</h2>
+				<div class="util_menu" >
+					<ul>
+						<!--@nif(login_block)-->
+						<li><a href="/member/login.jsp" title="로그인페이지로 이동" >로그인</a></li>
+						<li><a href="/member/agreement.jsp" title="회원가입 페이지로 이동" >회원가입</a></li>
+						<!--/nif(login_block)-->
+						<!--@if(login_block)--><li><a href="/member/logout.jsp" title="로그아웃하고 메인으로 이동" >로그아웃</a></li><!--/if(login_block)-->
+					</ul>
+					<!--@if(login_block)--><p class="af_log"><strong>{{SYS_USERNAME}}</strong><span style="font-size:12px;">님 환영합니다.</span></p><!--/if(login_block)-->
+				</div>
+			</div>
+			<div class="inner">
+				<h1 id="logo_h1" class="logo">
+					<a href="/main/index.jsp" title="메인페이지로 이동">
+						<span id="logo_enter">&lt;ENTER "_"&gt;</span> 오픈 더 이러닝 사이트!
+					</a>
+				</h1>
+				
+				<div class="menu_wrap">
+					<h2 class="hide">메인 메뉴</h2>
+					<ul id="gnb" style="clear:both">
+						<li id="GNB_COURSE"><a href="/course/course_list.jsp" title="수강신청 페이지로 이동">수강신청</a></li>
+						<li id="GNB_MYPAGE"><a href="/mypage/index.jsp" title="나의 강의실 페이지로 이동">마이페이지</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
