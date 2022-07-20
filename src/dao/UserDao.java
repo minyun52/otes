@@ -8,6 +8,7 @@ import java.util.regex.*;
 public class UserDao extends DataObject {
     //added for github test
     //인텔리제이에서 push 테스트
+    //min branch merged
     public String[] types = {"U=>회원", "A=>운영자", "S=>최고관리자"};
     public String[] adminTypes = {"A=>운영자", "S=>최고관리자"};
     public String[] emailYn = {"Y=>동의", "N=>미동의"};
