@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.regex.*;
 
 public class UserDao extends DataObject {
-
+//added for github test
     public String[] types = {"U=>회원", "A=>운영자", "S=>최고관리자"};
     public String[] adminTypes = {"A=>운영자", "S=>최고관리자"};
     public String[] emailYn = {"Y=>동의", "N=>미동의"};
