@@ -1,0 +1,17 @@
+SMAP
+_privacy__jsp.java
+JSP
+*S JSP
+*F
++ 1 init.jsp
+init.jsp
++ 2 init.jsp
+privacy/init.jsp
++ 3 privacy.jsp
+privacy/privacy.jsp
+*L
+1#1,47:37
+1#2,5:84
+1#3,7:89
+7#3:96
+*E
