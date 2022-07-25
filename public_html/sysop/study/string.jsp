@@ -2,7 +2,7 @@
 
 //출력
 p.setLayout(ch);
-p.setBody("study.algo_list");
+p.setBody("study.string");
 p.display();
 
 %>
