@@ -62,6 +62,17 @@
                 el.slideDown(200);
             }
         })
+
+        $("#sm").on("click", function() {
+            var el = $('#m3');
+            if(el.hasClass('open')) {
+                el.removeClass('open');
+                el.slideUp(200);
+            } else {
+                el.addClass('open');
+                el.slideDown(200);
+            }
+        })
     })
 
 
